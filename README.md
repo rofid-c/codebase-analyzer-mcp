@@ -17,10 +17,19 @@ Bayangkan Anda memiliki proyek dengan ribuan file. Ketika Anda menyuruh AI mengu
 2. 🔮 **Mensimulasikan Dampak (Blast Radius)**: Memberitahu AI file mana saja yang akan ikut *error* jika sebuah file diubah.
 3. 🗺️ **Visualisasi 3D**: Menampilkan seluruh struktur kode Anda dalam bentuk grafik WebGL 3D yang interaktif, sehingga manusia dan AI bisa sama-sama melihat "peta" proyek.
 
-<p align="center">
-  <!-- Ganti 'screenshot.png' dengan nama foto yang Anda maksud jika sudah dipindahkan ke folder docs/assets/ -->
-  <img src="./docs/assets/screenshot.png" alt="Spider Map 3D Visualization Preview" width="800"/>
-</p>
+<div align="center">
+  <img src="./docs/assets/spider-map-main.png" alt="Spider Map Main Overview" width="800"/>
+  <br/><br/>
+  <table>
+    <tr>
+      <td><img src="./docs/assets/spider-map-3d.png" alt="Spider Map 3D View" width="400"/></td>
+      <td><img src="./docs/assets/spider-map-2d.png" alt="Spider Map 2D View" width="400"/></td>
+    </tr>
+    <tr>
+      <td colspan="2"><img src="./docs/assets/spider-map-detail.png" alt="Node Detail Panel" width="800"/></td>
+    </tr>
+  </table>
+</div>
 
 ---
 
