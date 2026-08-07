@@ -258,7 +258,7 @@ export function decompressGraph(compressed: CompressedGraph): GraphData {
 
 export function getTokenEstimate(data: any): number {
   const jsonString = JSON.stringify(data);
-  // Perkiraan kasar: 1 token ≈ 4 karakter
+  // Perkiraan kasar: 1 token ≈ 4 karakter (estimasi, bukan hitungan tokenizer asli)
   return Math.ceil(jsonString.length / 4);
 }
 

@@ -46,6 +46,7 @@ Bayangkan Anda memiliki proyek dengan ribuan file. Ketika Anda menyuruh AI mengu
 - [📊 Performa](#-performa)
 - [🔧 Konfigurasi](#-konfigurasi)
 - [🐛 Troubleshooting](#-troubleshooting)
+- [⚠️ Known Limitations](#️-known-limitations)
 - [📚 Dokumentasi Lengkap](#-dokumentasi-lengkap)
 
 ---
@@ -82,6 +83,9 @@ Analisis evolusi codebase dari waktu ke waktu dengan prediksi hotspot dan patter
 ### 🤖 **AI-Optimized Output**
 Format output khusus yang dioptimalkan untuk AI assistants dengan berbagai response modes.
 
+### 🛡️ **Anti AI-Looping & Token Saver**
+Dilengkapi mekanisme pelindung otomatis (explicit `[TRUNCATED]` warning, sinyal sinkronisasi *indexing*, serta pemotongan pintar berdasarkan *risk level*) agar agen AI tidak kehabisan kuota token dan tidak terperangkap *looping* saat menganalisis codebase masif.
+
 ---
 
 ## 🚀 Quick Start
@@ -100,7 +104,7 @@ Sebelum instalasi, pastikan Anda sudah install:
 ```bash
 # 1. Clone repository
 git clone https://github.com/rofid-c/codebase-analyzer-mcp.git
-cd spider-map-mcp
+cd codebase-analyzer-mcp
 
 # 2. Install dependencies
 npm install
@@ -149,14 +153,22 @@ ls dist/
 # - dist/core/*.js
 # - dist/index.js
 
-# Test crawl
+# Test crawl (output ringkas)
 npm run crawl
 
-# Output yang diharapkan:
-# 🕷️  Spider Map — Codebase Crawler
-# ─────────────────────────────────
-# 📂 Target: C:\Users\...\codebase-analyzer-mcp
-# ...
+# Test crawl dengan log detail
+npm run crawl -- --verbose
+
+# Output yang diharapkan (tanpa verbose):
+# ✅ Spider Map generated successfully!
+# ────────────────────────────────────────
+#    ⏱️ Time:         0.07s
+#    📄 Files:        35
+#    🔗 Links:        32
+#    ⚡ Entry Points: 7
+#    🔥 Hotspots:     1
+#    💤 Orphans:      16
+#    🚨 Critical:     0
 ```
 
 ### **Setup untuk AI Assistant**
@@ -186,8 +198,11 @@ npm run setup
 #### 1️⃣ **Command Line (Manual Crawl)**
 
 ```bash
-# Scan direktori saat ini
+# Scan direktori saat ini (output ringkas)
 npm run crawl
+
+# Scan direktori dengan log proses detail (verbose)
+npm run crawl -- --verbose
 
 # Scan project tertentu
 npm run crawl -- --path "C:\path\to\your\project"
@@ -195,8 +210,8 @@ npm run crawl -- --path "C:\path\to\your\project"
 # Auto-indexing mode (file watcher + 2 detik debounce)
 npm run crawl -- --watch
 
-# Watch project tertentu
-npm run crawl -- --path "/path/to/project" --watch
+# Watch project tertentu dengan log detail
+npm run crawl -- --path "/path/to/project" --watch --verbose
 ```
 
 #### 2️⃣ **Integration dengan AI (MCP Server)**
@@ -343,10 +358,13 @@ Generate atau load dependency graph dengan berbagai mode response.
 ```
 
 **Response Modes:**
-- `full`: Full JSON (~12,500 tokens)
-- `compressed`: Binary-like format (~2,500 tokens, 80% savings)
-- `summary`: Stats only (~500 tokens, 96% savings)
-- `critical-only`: Hotspots + critical files (~1,500 tokens, 90% savings)
+- `full`: Full JSON (~12,500 tokens†)
+- `compressed`: Binary-like format (~2,500 tokens†, 80% savings)
+- `summary`: Stats only (~500 tokens†, 96% savings)
+- `critical-only`: Hotspots + critical files (~1,500 tokens†, 90% savings)
+
+> †Estimasi token menggunakan rumus `chars ÷ 4`. Jumlah token sesungguhnya
+> dapat bervariasi tergantung tokenizer model AI yang digunakan.
 
 ### 3. **`get_file_info`** 📄
 Dapatkan info detail tentang file tertentu (98% token reduction).
@@ -575,8 +593,8 @@ Setiap file ditrack evolusinya dari waktu ke waktu:
 - **Hotspot Emergence**: File biasa menjadi hotspot
 
 #### **🔮 Predictive Analytics**
-Menggunakan machine learning untuk prediksi:
-- **Future Hotspots**: File mana yang akan bermasalah 30 hari ke depan
+Menggunakan **heuristic scoring** berdasarkan tren historis:
+- **Future Hotspots**: File mana yang akan bermasalah 30 hari ke depan (berdasarkan weighted formula)
 - **Technical Debt Prediction**: File yang perlu refactoring urgent
 - **Stability Score**: Seberapa stabil file dari perubahan
 - **Change Velocity**: Frekuensi perubahan file
@@ -791,22 +809,24 @@ A: query_temporal(queryType="volatility", threshold=80)
 Action: Add extra monitoring/alerts untuk files tersebut
 ```
 
-### **Machine Learning Models:**
+### **Heuristic Scoring Model:**
 
-#### **Hotspot Prediction Model**
+> ⚠️ Skor prediksi dihitung menggunakan **weighted heuristic formula** berdasarkan tren historis,
+> bukan model machine learning yang dilatih dari dataset. Istilah "prediction" dan "risk score"
+> merujuk pada kalkulasi deterministik dari metrik kode.
+
+#### **Hotspot Risk Calculation**
 ```python
-# Simplified representation
+# Weighted heuristic formula (bukan trained ML model)
 features = [
-  complexity_growth_rate,
-  dependency_change_frequency, 
-  line_of_code_growth,
-  bug_count_history,
-  author_count_variance,
-  time_between_changes
+  complexity_growth_rate,          # Bobot 40%
+  dependency_change_frequency,     # Bobot 30%
+  line_of_code_growth,             # Bobot 20%
+  time_between_changes             # Bobot 10%
 ]
 
-hotspot_risk_score = predict_hotspot_model(features)
-confidence_score = calculate_confidence(historical_accuracy)
+hotspot_risk_score = weighted_sum(features, predefined_weights)
+# Skor 0-100 berdasarkan bobot tetap, bukan output model ML
 ```
 
 #### **Pattern Recognition**
@@ -837,9 +857,9 @@ export const temporalConfig = {
   snapshotInterval: '1d',        // Daily snapshots
   retentionDays: 365,            // Keep 1 year of data
   predictionHorizon: 30,         // Predict 30 days ahead
-  confidenceThreshold: 70,       // Only show high confidence predictions
+  riskThreshold: 70,             // Only show high-risk predictions
   patternMinOccurrences: 3,      // Pattern needs 3+ occurrences
-  mlModelUpdate: '7d'            // Retrain model weekly
+  scoringRecalculation: '7d'     // Recalculate heuristic scores weekly
 };
 ```
 
@@ -1008,10 +1028,13 @@ if (distance < minRadius) {
 
 ---
 
-## 📊 Performa
+## 📊 Performa (Estimasi)
 
-| Project Size | Crawl Time | Cache Size | Query Time | Token Usage (Compressed) |
-|--------------|------------|------------|------------|--------------------------|
+> Angka token di bawah adalah **estimasi** menggunakan formula `chars ÷ 4`.
+> Token aktual bervariasi per model AI.
+
+| Project Size | Crawl Time | Cache Size | Query Time | Token Usage (Compressed)† |
+|--------------|------------|------------|------------|---------------------------|
 | 100 files | ~1s | 50 KB | <10ms | ~500 tokens |
 | 1,000 files | ~5s | 500 KB | <50ms | ~2,500 tokens |
 | 5,000 files | ~20s | 2.5 MB | <200ms | ~8,000 tokens |
@@ -1198,6 +1221,37 @@ npx tsx src/index.ts crawl
 - Check `projectRoot` path adalah absolute path
 - Verify file extensions di crawler config
 - Check ignore patterns tidak exclude semua files
+
+---
+
+## ⚠️ Known Limitations
+
+### **Regex-Based Parser**
+Parser multi-bahasa Spider Map menggunakan **regex pattern matching**, bukan Abstract Syntax Tree (AST). Ini memiliki implikasi:
+
+| Skenario | Risiko | Contoh |
+|----------|--------|--------|
+| Dynamic imports dengan variabel | ❌ Tidak terdeteksi | `import(dynamicVar)`, `require(getPath())` |
+| String yang mirip pola import | ⚠️ False positive | `console.log("import foo from 'bar'")` |
+| Macro/preprocessor | ❌ Tidak terdeteksi | C/C++ macro yang menghasilkan `#include` |
+| Conditional imports | ⚠️ Mungkin duplikat | `if (env) import('x')` — terdeteksi walau tidak selalu aktif |
+| Template literal imports | ❌ Tidak terdeteksi | `` import(`./locale/${lang}`) `` |
+| Re-exports yang kompleks | ⚠️ Partial | `export * from` terdeteksi, barrel files partial |
+
+**Dampak**: Akurasi dependency graph bergantung pada parser ini. False positive/negative dapat memengaruhi hasil impact analysis dan hotspot detection.
+
+**Mitigasi**: Untuk proyek yang membutuhkan akurasi tinggi, validasi manual terhadap hasil `get_project_map` direkomendasikan, terutama pada file-file critical.
+
+### **Token Count Estimation**
+Angka token yang ditampilkan (di response modes dan tabel performa) menggunakan formula sederhana `chars ÷ 4`, bukan tokenizer asli dari model AI. Angka aktual dapat bervariasi 10-30% tergantung model.
+
+### **Single-Project Scope**
+Spider Map didesain untuk menganalisis satu project root pada satu waktu. Cross-repository dependency tracking belum didukung.
+
+### **Cache Concurrency**
+File watcher (auto-indexer) dan manual crawl (`npm run crawl`) dapat menulis ke `.spidermap/graph.json` secara bersamaan. Spider Map menggunakan simple file lock (`.spidermap/graph.lock`) untuk mencegah race condition. Jika lock gagal setelah 3 retry, penulisan dilakukan tanpa lock sebagai fallback.
+
+**Rekomendasi**: Hindari menjalankan `npm run crawl` manual saat auto-indexer aktif. Gunakan `forceReindex()` melalui MCP tool sebagai gantinya.
 
 ---
 

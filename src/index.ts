@@ -18,18 +18,24 @@ async function main() {
 
     const isWatchMode = args.includes('--watch');
 
+    const isVerbose = args.includes('--verbose');
+
     const runCrawl = async () => {
-      console.log('');
-      console.log('🕷️  Spider Map — Codebase Crawler');
-      console.log('─'.repeat(40));
-      console.log(`📂 Target: ${projectRoot}`);
-      console.log('');
-
-      console.log('⏳ Crawling files...');
+      const startTime = Date.now();
+      
+      if (isVerbose) {
+        console.log('');
+        console.log('🕷️  Spider Map — Codebase Crawler');
+        console.log('─'.repeat(40));
+        console.log(`📂 Target: ${projectRoot}`);
+        console.log('');
+        console.log('⏳ Crawling files...');
+      }
+      
       const files = await crawlDirectory(projectRoot);
-      console.log(`   Found ${files.length} files`);
+      if (isVerbose) console.log(`   Found ${files.length} files`);
 
-      console.log('⏳ Parsing dependencies...');
+      if (isVerbose) console.log('⏳ Parsing dependencies...');
       const allFilesSet = new Set(files);
       const dependencies = [];
       let totalLinks = 0;
@@ -41,16 +47,17 @@ async function main() {
           totalLinks += targets.length;
         }
       }
-      console.log(`   Found ${totalLinks} dependency links`);
+      if (isVerbose) console.log(`   Found ${totalLinks} dependency links`);
 
-      console.log('⏳ Building graph...');
+      if (isVerbose) console.log('⏳ Building graph...');
       const graphData = buildGraph(files, dependencies);
 
       const hotspots = graphData.nodes.filter(n => n.isHotspot).length;
       const orphans = graphData.nodes.filter(n => n.isOrphan).length;
       const entryPoints = graphData.nodes.filter(n => n.isEntryPoint).length;
+      const criticals = graphData.nodes.filter(n => n.riskLevel === 'critical').length;
 
-      console.log('⏳ Saving cache...');
+      if (isVerbose) console.log('⏳ Saving cache...');
       await saveGraphCache(projectRoot, graphData);
       
       // Auto-copy ke folder UI (public/ dan .spidermap/) di direktori MCP jika target path berbeda
@@ -70,14 +77,19 @@ async function main() {
         // Abaikan jika proses penyalinan gagal
       }
 
+      const executionTimeMs = Date.now() - startTime;
+      const timeStr = (executionTimeMs / 1000).toFixed(2) + 's';
+
       console.log('');
       console.log('✅ Spider Map generated successfully!');
       console.log('─'.repeat(40));
+      console.log(`   ⏱️ Time:         ${timeStr}`);
       console.log(`   📄 Files:        ${graphData.nodes.length}`);
       console.log(`   🔗 Links:        ${graphData.links.length}`);
       console.log(`   ⚡ Entry Points: ${entryPoints}`);
       console.log(`   🔥 Hotspots:     ${hotspots}`);
       console.log(`   💤 Orphans:      ${orphans}`);
+      console.log(`   🚨 Critical:     ${criticals}`);
       console.log('');
       console.log(`   💾 Saved to: ${projectRoot}/.spidermap/graph.json`);
       console.log('');

@@ -46,6 +46,7 @@ export class AutoIndexer {
   private graphCache: GraphData | null = null;
   private fileHashCache = new Map<string, string>();
   private periodicSyncTimer: NodeJS.Timeout | null = null;
+  private isIndexing = false;
 
   constructor(config: AutoIndexerConfig) {
     this.config = {
@@ -177,16 +178,30 @@ export class AutoIndexer {
 
     this.debounceTimer = setTimeout(async () => {
       console.log(`[AutoIndexer] Debounce triggered (${this.pendingChanges.size} changes)`);
-      await this.performIncrementalReindex();
+      const pendingSize = this.pendingChanges.size;
       this.pendingChanges.clear();
       this.debounceTimer = null;
+      await this.performIncrementalReindex(pendingSize);
     }, this.config.debounceMs);
+  }
+
+  /**
+   * Status AutoIndexer saat ini
+   */
+  getStatus() {
+    const isPending = this.debounceTimer !== null || this.pendingChanges.size > 0;
+    return {
+      status: (this.isIndexing || isPending) ? 'in_progress' : 'idle',
+      estimatedReadyInMs: isPending ? (this.config.debounceMs || 3000) : (this.isIndexing ? 2000 : 0),
+      pendingFiles: this.pendingChanges.size
+    };
   }
 
   /**
    * Lakukan reindeks inkremental (hanya file yang berubah)
    */
-  private async performIncrementalReindex(): Promise<void> {
+  private async performIncrementalReindex(pendingSize: number = 0): Promise<void> {
+    this.isIndexing = true;
     const startTime = Date.now();
 
     try {
@@ -240,6 +255,8 @@ export class AutoIndexer {
       console.error('[AutoIndexer] Incremental reindex failed:', err);
       // Fallback to full reindex
       await this.performFullReindex();
+    } finally {
+      this.isIndexing = false;
     }
   }
 
@@ -247,6 +264,7 @@ export class AutoIndexer {
    * Lakukan reindeks secara penuh (seluruh proyek)
    */
   private async performFullReindex(): Promise<void> {
+    this.isIndexing = true;
     const startTime = Date.now();
 
     try {
@@ -285,6 +303,8 @@ export class AutoIndexer {
       );
     } catch (err) {
       console.error('[AutoIndexer] Full reindex failed:', err);
+    } finally {
+      this.isIndexing = false;
     }
   }
 

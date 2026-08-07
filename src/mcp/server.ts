@@ -10,6 +10,70 @@ import { calculateFileMetrics, detectChanges, loadChangeLog, saveChangeLog } fro
 import { addTemporalSnapshot, loadTemporalData, predictFutureHotspots, analyzeEvolutionPatterns, calculate4DPositions } from "../core/temporal.js";
 import { queryByTrend, queryByVolatility, queryByVelocity, detectPatterns, analyzeEvolutionOverPeriod, calculateConfidenceMetrics } from "../core/temporal-advanced.js";
 import { initializeAutoIndexer, stopAutoIndexer, getAutoIndexer, type AutoIndexerConfig } from "../core/auto-indexer.js";
+import path from 'path';
+
+// ============================================
+// SECURITY: Validasi projectRoot
+// ============================================
+
+function validateProjectRoot(rawPath: string): string {
+  const resolved = path.resolve(rawPath);
+  
+  // Tolak path yang mengandung traversal eksplisit
+  if (rawPath.includes('..')) {
+    throw new Error(
+      `Security: projectRoot mengandung path traversal '..'. ` +
+      `Gunakan absolute path tanpa '..'. Diterima: "${rawPath}"`
+    );
+  }
+  
+  // Tolak path sistem yang berbahaya (Windows & Unix)
+  const dangerousPaths = [
+    'C:\\Windows', 'C:\\Program Files', 'C:\\ProgramData',
+    '/etc', '/usr', '/bin', '/sbin', '/boot', '/proc', '/sys', '/root',
+    '/var/log', '/var/run'
+  ];
+  
+  const resolvedLower = resolved.toLowerCase().replace(/\\/g, '/');
+  const rawLower = rawPath.toLowerCase().replace(/\\/g, '/');
+  for (const dangerous of dangerousPaths) {
+    const dangerousNormalized = dangerous.toLowerCase().replace(/\\/g, '/');
+    if (resolvedLower.startsWith(dangerousNormalized) || rawLower.startsWith(dangerousNormalized)) {
+      throw new Error(
+        `Security: projectRoot mengarah ke direktori sistem yang dilindungi: "${resolved}"`
+      );
+    }
+  }
+  
+  return resolved;
+}
+
+// ============================================
+// HELPER: Adaptive response mode
+// ============================================
+
+function getDefaultResponseMode(nodeCount: number): string {
+  if (nodeCount < 50) return 'full';
+  if (nodeCount < 200) return 'summary';
+  return 'compressed';
+}
+
+// ============================================
+// HELPER: Sinyal Status Indexing
+// ============================================
+
+function injectIndexingStatus(data: any): any {
+  const indexer = getAutoIndexer();
+  if (indexer) {
+    const status = indexer.getStatus();
+    data.indexingStatus = status.status;
+    data.estimatedReadyInMs = status.estimatedReadyInMs;
+    if (status.status === 'in_progress') {
+      data.warning = "Data sedang di-refresh oleh file watcher (indexing in progress). Data mungkin tidak sepenuhnya up-to-date. Harap tunggu beberapa detik dan ulangi query jika perlu data terbaru.";
+    }
+  }
+  return data;
+}
 
 const server = new Server({
   name: "spider-map-mcp",
@@ -326,7 +390,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
   // ===== KONFIGURASI AUTO INDEXING (AUTO INDEXING) =====
   if (request.params.name === "configure_auto_indexing") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const config: AutoIndexerConfig = {
       projectRoot,
       enabled: request.params.arguments?.enabled !== false,
@@ -399,9 +463,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
   // ===== DAPATKAN PETA PROYEK (GET PROJECT MAP) =====
   if (request.params.name === "get_project_map") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const forceRefresh = Boolean(request.params.arguments?.forceRefresh);
-    const responseMode = String(request.params.arguments?.responseMode || "compressed");
+    const explicitMode = request.params.arguments?.responseMode as string | undefined;
 
     let graphData = null;
     
@@ -429,6 +493,12 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       graphData = buildGraph(files, dependencies);
       await saveGraphCache(projectRoot, graphData);
     }
+
+    // Gunakan mode adaptif jika AI tidak menentukan responseMode secara eksplisit
+    const nodeCount = graphData.nodes.length;
+    const responseMode = explicitMode 
+      ? String(explicitMode) 
+      : getDefaultResponseMode(nodeCount);
 
     // Pilih format respons berdasarkan mode yang diminta
     let responseData: any;
@@ -476,24 +546,36 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
     // Tambahkan perbandingan penggunaan token sebagai transparansi
     const tokenComparison = compareTokenUsage(graphData);
-    
+
+    const MAX_RESPONSE_CHARS = 50000;
+    const fullResponse = JSON.stringify(injectIndexingStatus({
+      mode: responseMode,
+      info: modeInfo,
+      autoIndexing: autoIndexer ? "enabled" : "disabled",
+      tokenSavings: tokenComparison,
+      data: responseData
+    }), null, 2);
+
+    const isTruncated = fullResponse.length > MAX_RESPONSE_CHARS;
+    const finalResponse = isTruncated
+      ? fullResponse.substring(0, MAX_RESPONSE_CHARS) + 
+        '\n\n⚠️ [TRUNCATED] Response dipotong dari ' + fullResponse.length + 
+        ' ke ' + MAX_RESPONSE_CHARS + ' karakter. ' +
+        'Gunakan responseMode "compressed" atau "summary" untuk data lengkap, ' +
+        'atau gunakan "get_file_info" untuk query file spesifik.'
+      : fullResponse;
+
     return {
       content: [{ 
         type: "text", 
-        text: JSON.stringify({
-          mode: responseMode,
-          info: modeInfo,
-          autoIndexing: autoIndexer ? "enabled" : "disabled",
-          tokenSavings: tokenComparison,
-          data: responseData
-        }, null, 2).substring(0, 50000) // Potong batas aman (safety truncate)
+        text: finalResponse
       }],
     };
   }
 
   // ===== DAPATKAN INFO FILE (GET FILE INFO) =====
   if (request.params.name === "get_file_info") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const filePath = String(request.params.arguments?.filePath);
 
     const graphData = await loadGraphCache(projectRoot);
@@ -511,13 +593,13 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     }
 
     return {
-      content: [{ type: "text", text: JSON.stringify(fileInfo, null, 2) }],
+      content: [{ type: "text", text: JSON.stringify(injectIndexingStatus(fileInfo), null, 2) }],
     };
   }
 
   // ===== CARI FILE (SEARCH FILES) =====
   if (request.params.name === "search_files") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const filters = request.params.arguments?.filters || {};
 
     const graphData = await loadGraphCache(projectRoot);
@@ -529,14 +611,30 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
     const searchResult = searchFiles(graphData, filters);
     
+    const critical = searchResult.files.filter(f => f.riskLevel === 'critical');
+    const moderate = searchResult.files.filter(f => f.riskLevel === 'moderate');
+    const low = searchResult.files.filter(f => f.riskLevel === 'low');
+    const leaf = searchResult.files.filter(f => f.riskLevel === 'leaf');
+
+    const groupedResult = {
+      totalMatches: searchResult.totalMatches,
+      appliedFilters: searchResult.appliedFilters,
+      results: {
+        critical,
+        moderate: moderate.slice(0, 10),
+        low: { count: low.length },
+        leaf: { count: leaf.length }
+      }
+    };
+    
     return {
-      content: [{ type: "text", text: JSON.stringify(searchResult, null, 2) }],
+      content: [{ type: "text", text: JSON.stringify(injectIndexingStatus(groupedResult), null, 2) }],
     };
   }
 
   // ===== KONSULTASI FILE (QUERY FILE) (Versi lama, dipertahankan untuk kompatibilitas) =====
   if (request.params.name === "query_file") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const fileId = String(request.params.arguments?.fileId);
 
     const graphData = await loadGraphCache(projectRoot);
@@ -554,13 +652,13 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     }
 
     return {
-      content: [{ type: "text", text: JSON.stringify(fileInfo, null, 2) }],
+      content: [{ type: "text", text: JSON.stringify(injectIndexingStatus(fileInfo), null, 2) }],
     };
   }
 
   // ===== SIMULASIKAN DAMPAK (SIMULATE IMPACT) =====
   if (request.params.name === "simulate_impact") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const targetFile = String(request.params.arguments?.targetFile);
 
     const graphData = await loadGraphCache(projectRoot);
@@ -571,19 +669,37 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     }
 
     const simulation = simulateImpact(graphData, targetFile);
+    
+    const getRisk = (id: string) => graphData.nodes.find(n => n.id === id)?.riskLevel || 'leaf';
+    const indirectlyAffectedIds = Array.from(simulation.indirectlyAffected);
+    
+    const critical = indirectlyAffectedIds.filter(id => getRisk(id) === 'critical');
+    const moderate = indirectlyAffectedIds.filter(id => getRisk(id) === 'moderate');
+    const low = indirectlyAffectedIds.filter(id => getRisk(id) === 'low');
+    const leaf = indirectlyAffectedIds.filter(id => getRisk(id) === 'leaf');
+
+    const groupedIndirect = {
+      critical,
+      moderate: moderate.slice(0, 10),
+      low: { count: low.length },
+      leaf: { count: leaf.length },
+      totalIndirect: indirectlyAffectedIds.length,
+      shown: critical.length + Math.min(moderate.length, 10)
+    };
+
     return {
-      content: [{ type: "text", text: JSON.stringify({
+      content: [{ type: "text", text: JSON.stringify(injectIndexingStatus({
         changedFile: simulation.changedFile,
-        directlyAffected: simulation.directlyAffected,
-        indirectlyAffected: simulation.indirectlyAffected,
+        directlyAffected: Array.from(simulation.directlyAffected),
+        indirectlyAffected: groupedIndirect,
         totalAffectedCount: simulation.totalAffectedCount
-      }, null, 2) }],
+      }), null, 2) }],
     };
   }
 
   // ===== DAPATKAN METRIK KODE (GET CODE METRICS) =====
   if (request.params.name === "get_code_metrics") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const filePath = request.params.arguments?.filePath as string | undefined;
     const fileExtension = request.params.arguments?.fileExtension as string | undefined;
 
@@ -637,7 +753,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
   // ===== DETEKSI PERUBAHAN (DETECT CHANGES) =====
   if (request.params.name === "detect_changes") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const forceRefresh = Boolean(request.params.arguments?.forceRefresh);
 
     // Dapatkan grafik saat ini
@@ -729,7 +845,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
   // ===== DAPATKAN ANALISIS WAKTU 4D (GET TIME ANALYSIS 4D) =====
   if (request.params.name === "get_time_analysis") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const timeRange = request.params.arguments?.timeRange as any;
     const includePositioning = Boolean(request.params.arguments?.includePositioning);
 
@@ -767,11 +883,12 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     const highRiskFiles = nodesWithHistory.filter(n => (n.evolutionMetrics?.hotspotRisk || 0) > 50);
 
     return {
-      content: [{ type: "text", text: JSON.stringify({
-        temporalMetadata: filteredGraph.temporalMetadata,
+      content: [{ type: "text", text: JSON.stringify(injectIndexingStatus({
+        timeRange,
+        analyzedPeriod: `${new Date(temporalGraph.temporalMetadata.timeRange.start).toLocaleDateString()} to ${new Date(temporalGraph.temporalMetadata.timeRange.end).toLocaleDateString()}`,
+        snapshotsAnalyzed: temporalGraph.temporalMetadata.totalSnapshots,
         summary: {
-          totalFiles: filteredGraph.nodes.length,
-          filesWithHistory: nodesWithHistory.length,
+          totalFilesTracked: nodesWithHistory.length,
           averageStability: Math.round(avgStability),
           highRiskFiles: highRiskFiles.length,
           overallTrend: filteredGraph.temporalMetadata.evolutionSummary.complexityTrend
@@ -793,13 +910,13 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           testCoverageEvolution: filteredGraph.temporalMetadata.evolutionSummary.testCoverageEvolution,
           fileCountEvolution: filteredGraph.temporalMetadata.evolutionSummary.fileCountEvolution
         }
-      }, null, 2) }],
+      }), null, 2) }],
     };
   }
 
   // ===== PREDIKSI HOTSPOT (PREDICT HOTSPOTS) =====
   if (request.params.name === "predict_hotspots") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const daysAhead = Number(request.params.arguments?.daysAhead) || 30;
     const riskThreshold = Number(request.params.arguments?.riskThreshold) || 30;
 
@@ -817,8 +934,19 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     const insights = analyzeEvolutionPatterns(temporalGraph);
     const criticalInsights = insights.filter(i => i.severity === 'high' || i.severity === 'critical');
 
+    // Grouping predictions berdasarkan risk score
+    const critical = highRiskPredictions.filter(p => p.riskScore >= 70);
+    const moderate = highRiskPredictions.filter(p => p.riskScore >= 40 && p.riskScore < 70);
+    const lowCount = predictions.filter(p => p.riskScore < 40).length;
+
+    const groupedPredictions = {
+      critical,
+      moderate: moderate.slice(0, 10),
+      low: { count: lowCount }
+    };
+
     return {
-      content: [{ type: "text", text: JSON.stringify({
+      content: [{ type: "text", text: JSON.stringify(injectIndexingStatus({
         predictionDate: new Date().toISOString(),
         timeHorizon: `${daysAhead} days`,
         summary: {
@@ -827,20 +955,20 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           criticalInsights: criticalInsights.length,
           overallTrend: temporalGraph.temporalMetadata.evolutionSummary.complexityTrend
         },
-        predictions: highRiskPredictions.slice(0, 15), // 15 prediksi teratas
+        predictions: groupedPredictions,
         criticalInsights: criticalInsights,
         recommendations: {
           immediate: highRiskPredictions.filter(p => p.riskScore > 70).map(p => p.filePath),
           schedule: highRiskPredictions.filter(p => p.riskScore > 50 && p.riskScore <= 70).map(p => p.filePath),
           monitor: highRiskPredictions.filter(p => p.riskScore >= 30 && p.riskScore <= 50).map(p => p.filePath)
         }
-      }, null, 2) }],
+      }), null, 2) }],
     };
   }
 
   // ===== KONSULTASI TEMPORAL LANJUTAN (QUERY TEMPORAL ADVANCED) =====
   if (request.params.name === "query_temporal") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const queryType = String(request.params.arguments?.queryType);
     const trendType = request.params.arguments?.trendType as any;
     const threshold = Number(request.params.arguments?.threshold) || 50;
@@ -899,13 +1027,13 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     }
 
     return {
-      content: [{ type: "text", text: JSON.stringify(result, null, 2) }],
+      content: [{ type: "text", text: JSON.stringify(injectIndexingStatus(result), null, 2) }],
     };
   }
 
   // ===== ANALISIS EVOLUSI (ANALYZE EVOLUTION) =====
   if (request.params.name === "analyze_evolution") {
-    const projectRoot = String(request.params.arguments?.projectRoot);
+    const projectRoot = validateProjectRoot(String(request.params.arguments?.projectRoot));
     const periodDays = Number(request.params.arguments?.periodDays);
     const includePatterns = Boolean(request.params.arguments?.includePatterns !== false);
 
@@ -935,7 +1063,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       }));
 
     return {
-      content: [{ type: "text", text: JSON.stringify({
+      content: [{ type: "text", text: JSON.stringify(injectIndexingStatus({
         analysisPeriod: {
           startDate: new Date(analytics.period.start).toISOString(),
           endDate: new Date(analytics.period.end).toISOString(),
@@ -963,7 +1091,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         },
         patterns: includePatterns ? analytics.patterns : { message: 'Skipped' },
         recommendations: analytics.patterns.recommendations
-      }, null, 2) }],
+      }), null, 2) }],
     };
   }
 

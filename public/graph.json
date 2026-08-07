@@ -274,6 +274,97 @@
       "fileCategory": "core"
     },
     {
+      "id": "tests/TestCase.php",
+      "name": "TestCase.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "template fe/detail-produk.html",
+      "name": "detail-produk.html",
+      "ext": ".html",
+      "importsCount": 2,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "template fe/index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "importsCount": 2,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "template fe/layanan.html",
+      "name": "layanan.html",
+      "ext": ".html",
+      "importsCount": 2,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "template fe/produk.html",
+      "name": "produk.html",
+      "ext": ".html",
+      "importsCount": 2,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "template fe/script.js",
+      "name": "script.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "template fe/styles.css",
+      "name": "styles.css",
+      "ext": ".css",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "style"
+    },
+    {
       "id": "sneat-bootstrap-html-admin-template-free-main/build-config.js",
       "name": "build-config.js",
       "ext": ".js",
@@ -404,8 +495,8 @@
       "fileCategory": "core"
     },
     {
-      "id": "tests/TestCase.php",
-      "name": "TestCase.php",
+      "id": "bootstrap/cache/packages.php",
+      "name": "packages.php",
       "ext": ".php",
       "importsCount": 0,
       "importedByCount": 0,
@@ -417,82 +508,17 @@
       "fileCategory": "core"
     },
     {
-      "id": "template fe/detail-produk.html",
-      "name": "detail-produk.html",
-      "ext": ".html",
-      "importsCount": 2,
-      "importedByCount": 0,
-      "isOrphan": false,
-      "isEntryPoint": true,
-      "isHotspot": false,
-      "role": "entry",
-      "riskLevel": "leaf",
-      "fileCategory": "view"
-    },
-    {
-      "id": "template fe/index.html",
-      "name": "index.html",
-      "ext": ".html",
-      "importsCount": 2,
-      "importedByCount": 0,
-      "isOrphan": false,
-      "isEntryPoint": true,
-      "isHotspot": false,
-      "role": "entry",
-      "riskLevel": "leaf",
-      "fileCategory": "view"
-    },
-    {
-      "id": "template fe/layanan.html",
-      "name": "layanan.html",
-      "ext": ".html",
-      "importsCount": 2,
-      "importedByCount": 0,
-      "isOrphan": false,
-      "isEntryPoint": true,
-      "isHotspot": false,
-      "role": "entry",
-      "riskLevel": "leaf",
-      "fileCategory": "view"
-    },
-    {
-      "id": "template fe/produk.html",
-      "name": "produk.html",
-      "ext": ".html",
-      "importsCount": 2,
-      "importedByCount": 0,
-      "isOrphan": false,
-      "isEntryPoint": true,
-      "isHotspot": false,
-      "role": "entry",
-      "riskLevel": "leaf",
-      "fileCategory": "view"
-    },
-    {
-      "id": "template fe/script.js",
-      "name": "script.js",
-      "ext": ".js",
+      "id": "bootstrap/cache/services.php",
+      "name": "services.php",
+      "ext": ".php",
       "importsCount": 0,
-      "importedByCount": 4,
-      "isOrphan": false,
+      "importedByCount": 0,
+      "isOrphan": true,
       "isEntryPoint": false,
       "isHotspot": false,
-      "role": "indirect",
-      "riskLevel": "low",
+      "role": "orphan",
+      "riskLevel": "leaf",
       "fileCategory": "core"
-    },
-    {
-      "id": "template fe/styles.css",
-      "name": "styles.css",
-      "ext": ".css",
-      "importsCount": 0,
-      "importedByCount": 4,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "indirect",
-      "riskLevel": "low",
-      "fileCategory": "style"
     },
     {
       "id": "app/Providers/AppServiceProvider.php",
@@ -510,136 +536,6 @@
     {
       "id": "database/factories/UserFactory.php",
       "name": "UserFactory.php",
-      "ext": ".php",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "core"
-    },
-    {
-      "id": "app/Services/ChatContextService.php",
-      "name": "ChatContextService.php",
-      "ext": ".php",
-      "importsCount": 6,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "app/Services/LaporanPenjualanService.php",
-      "name": "LaporanPenjualanService.php",
-      "ext": ".php",
-      "importsCount": 0,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "indirect",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "app/Services/LayananMetricSyncService.php",
-      "name": "LayananMetricSyncService.php",
-      "ext": ".php",
-      "importsCount": 2,
-      "importedByCount": 2,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "app/Services/MidtransService.php",
-      "name": "MidtransService.php",
-      "ext": ".php",
-      "importsCount": 3,
-      "importedByCount": 5,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "moderate",
-      "fileCategory": "core"
-    },
-    {
-      "id": "app/Services/PelangganIdentityService.php",
-      "name": "PelangganIdentityService.php",
-      "ext": ".php",
-      "importsCount": 2,
-      "importedByCount": 3,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "app/Services/RatingAggregateService.php",
-      "name": "RatingAggregateService.php",
-      "ext": ".php",
-      "importsCount": 4,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "app/Services/SpkLayananService.php",
-      "name": "SpkLayananService.php",
-      "ext": ".php",
-      "importsCount": 3,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "app/Services/SupabaseStorageService.php",
-      "name": "SupabaseStorageService.php",
-      "ext": ".php",
-      "importsCount": 0,
-      "importedByCount": 4,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "indirect",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "bootstrap/cache/packages.php",
-      "name": "packages.php",
-      "ext": ".php",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "core"
-    },
-    {
-      "id": "bootstrap/cache/services.php",
-      "name": "services.php",
       "ext": ".php",
       "importsCount": 0,
       "importedByCount": 0,
@@ -963,6 +859,136 @@
       "fileCategory": "style"
     },
     {
+      "id": "app/Services/ChatContextService.php",
+      "name": "ChatContextService.php",
+      "ext": ".php",
+      "importsCount": 6,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/LaporanPenjualanService.php",
+      "name": "LaporanPenjualanService.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/LayananMetricSyncService.php",
+      "name": "LayananMetricSyncService.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/MidtransService.php",
+      "name": "MidtransService.php",
+      "ext": ".php",
+      "importsCount": 3,
+      "importedByCount": 5,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "moderate",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/PelangganIdentityService.php",
+      "name": "PelangganIdentityService.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 3,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/RatingAggregateService.php",
+      "name": "RatingAggregateService.php",
+      "ext": ".php",
+      "importsCount": 4,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/SpkLayananService.php",
+      "name": "SpkLayananService.php",
+      "ext": ".php",
+      "importsCount": 3,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/SupabaseStorageService.php",
+      "name": "SupabaseStorageService.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/seeders/AdminSeeder.php",
+      "name": "AdminSeeder.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/seeders/DatabaseSeeder.php",
+      "name": "DatabaseSeeder.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
       "id": "resources/js/app.js",
       "name": "app.js",
       "ext": ".js",
@@ -999,45 +1025,6 @@
       "isHotspot": false,
       "role": "indirect",
       "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "database/seeders/AdminSeeder.php",
-      "name": "AdminSeeder.php",
-      "ext": ".php",
-      "importsCount": 1,
-      "importedByCount": 0,
-      "isOrphan": false,
-      "isEntryPoint": true,
-      "isHotspot": false,
-      "role": "entry",
-      "riskLevel": "leaf",
-      "fileCategory": "core"
-    },
-    {
-      "id": "database/seeders/DatabaseSeeder.php",
-      "name": "DatabaseSeeder.php",
-      "ext": ".php",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "core"
-    },
-    {
-      "id": "resources/views/welcome.blade.php",
-      "name": "welcome.blade.php",
-      "ext": ".php",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
       "fileCategory": "core"
     },
     {
@@ -1405,149 +1392,6 @@
       "fileCategory": "core"
     },
     {
-      "id": "sneat-bootstrap-html-admin-template-free-main/js/bootstrap.js",
-      "name": "bootstrap.js",
-      "ext": ".js",
-      "importsCount": 1,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/js/helpers.js",
-      "name": "helpers.js",
-      "ext": ".js",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "core"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/js/menu.js",
-      "name": "menu.js",
-      "ext": ".js",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "core"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/scss/core.scss",
-      "name": "core.scss",
-      "ext": ".scss",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended.scss",
-      "name": "_bootstrap-extended.scss",
-      "ext": ".scss",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap.scss",
-      "name": "_bootstrap.scss",
-      "ext": ".scss",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_colors.scss",
-      "name": "_colors.scss",
-      "ext": ".scss",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components.scss",
-      "name": "_components.scss",
-      "ext": ".scss",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_custom-styles.scss",
-      "name": "_custom-styles.scss",
-      "ext": ".scss",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/tasks/build.js",
-      "name": "build.js",
-      "ext": ".js",
-      "importsCount": 1,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/tasks/prod.js",
-      "name": "prod.js",
-      "ext": ".js",
-      "importsCount": 0,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "indirect",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
       "id": "tests/Feature/AdminCrudTest.php",
       "name": "AdminCrudTest.php",
       "ext": ".php",
@@ -1613,9 +1457,61 @@
       "fileCategory": "core"
     },
     {
+      "id": "resources/views/welcome.blade.php",
+      "name": "welcome.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
       "id": "tests/Unit/ExampleTest.php",
       "name": "ExampleTest.php",
       "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/js/bootstrap.js",
+      "name": "bootstrap.js",
+      "ext": ".js",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/js/helpers.js",
+      "name": "helpers.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/js/menu.js",
+      "name": "menu.js",
+      "ext": ".js",
       "importsCount": 0,
       "importedByCount": 0,
       "isOrphan": true,
@@ -1636,6 +1532,32 @@
       "isHotspot": false,
       "role": "orphan",
       "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/tasks/build.js",
+      "name": "build.js",
+      "ext": ".js",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/tasks/prod.js",
+      "name": "prod.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
       "fileCategory": "core"
     },
     {
@@ -2185,6 +2107,97 @@
       "fileCategory": "view"
     },
     {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/core.scss",
+      "name": "core.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended.scss",
+      "name": "_bootstrap-extended.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap.scss",
+      "name": "_bootstrap.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_colors.scss",
+      "name": "_colors.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components.scss",
+      "name": "_components.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_custom-styles.scss",
+      "name": "_custom-styles.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "app/Http/Middleware/ApplyDatabaseFailover.php",
+      "name": "ApplyDatabaseFailover.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
       "id": "app/Http/Controllers/AuthController.php",
       "name": "AuthController.php",
       "ext": ".php",
@@ -2213,19 +2226,6 @@
     {
       "id": "app/Http/Controllers/MidtransNotificationController.php",
       "name": "MidtransNotificationController.php",
-      "ext": ".php",
-      "importsCount": 1,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "app/Http/Middleware/ApplyDatabaseFailover.php",
-      "name": "ApplyDatabaseFailover.php",
       "ext": ".php",
       "importsCount": 1,
       "importedByCount": 1,
@@ -2326,6 +2326,45 @@
       "role": "direct",
       "riskLevel": "low",
       "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/layouts/app.blade.php",
+      "name": "app.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 24,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "indirect",
+      "riskLevel": "critical",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/layouts/customer.blade.php",
+      "name": "customer.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css",
+      "name": "demo.css",
+      "ext": ".css",
+      "importsCount": 0,
+      "importedByCount": 43,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "indirect",
+      "riskLevel": "critical",
+      "fileCategory": "style"
     },
     {
       "id": "resources/views/customer/dashboard.blade.php",
@@ -2484,45 +2523,6 @@
       "fileCategory": "core"
     },
     {
-      "id": "resources/views/layouts/app.blade.php",
-      "name": "app.blade.php",
-      "ext": ".php",
-      "importsCount": 0,
-      "importedByCount": 24,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": true,
-      "role": "indirect",
-      "riskLevel": "critical",
-      "fileCategory": "core"
-    },
-    {
-      "id": "resources/views/layouts/customer.blade.php",
-      "name": "customer.blade.php",
-      "ext": ".php",
-      "importsCount": 1,
-      "importedByCount": 0,
-      "isOrphan": false,
-      "isEntryPoint": true,
-      "isHotspot": false,
-      "role": "entry",
-      "riskLevel": "leaf",
-      "fileCategory": "core"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css",
-      "name": "demo.css",
-      "ext": ".css",
-      "importsCount": 0,
-      "importedByCount": 43,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": true,
-      "role": "indirect",
-      "riskLevel": "critical",
-      "fileCategory": "style"
-    },
-    {
       "id": "sneat-bootstrap-html-admin-template-free-main/fonts/iconify/iconify.js",
       "name": "iconify.js",
       "ext": ".js",
@@ -2533,32 +2533,6 @@
       "isHotspot": false,
       "role": "entry",
       "riskLevel": "leaf",
-      "fileCategory": "core"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/libs/apex-charts/apex-charts.scss",
-      "name": "apex-charts.scss",
-      "ext": ".scss",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/libs/apex-charts/apexcharts.js",
-      "name": "apexcharts.js",
-      "ext": ".js",
-      "importsCount": 1,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
       "fileCategory": "core"
     },
     {
@@ -2679,6 +2653,58 @@
       "fileCategory": "core"
     },
     {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/apex-charts/apex-charts.scss",
+      "name": "apex-charts.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/apex-charts/apexcharts.js",
+      "name": "apexcharts.js",
+      "ext": ".js",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/jquery/jquery.js",
+      "name": "jquery.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/masonry/masonry.js",
+      "name": "masonry.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
       "id": "sneat-bootstrap-html-admin-template-free-main/libs/perfect-scrollbar/perfect-scrollbar.js",
       "name": "perfect-scrollbar.js",
       "ext": ".js",
@@ -2703,19 +2729,6 @@
       "role": "orphan",
       "riskLevel": "leaf",
       "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/libs/jquery/jquery.js",
-      "name": "jquery.js",
-      "ext": ".js",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "core"
     },
     {
       "id": "sneat-bootstrap-html-admin-template-free-main/libs/highlight/highlight-github.scss",
@@ -2759,19 +2772,6 @@
     {
       "id": "sneat-bootstrap-html-admin-template-free-main/libs/popper/popper.js",
       "name": "popper.js",
-      "ext": ".js",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "core"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/libs/masonry/masonry.js",
-      "name": "masonry.js",
       "ext": ".js",
       "importsCount": 0,
       "importedByCount": 0,
@@ -3576,32 +3576,6 @@
       "fileCategory": "core"
     },
     {
-      "id": "resources/views/admin/account/edit.blade.php",
-      "name": "edit.blade.php",
-      "ext": ".php",
-      "importsCount": 1,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "resources/views/admin/booking-layanan/index.blade.php",
-      "name": "index.blade.php",
-      "ext": ".php",
-      "importsCount": 0,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "indirect",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
       "id": "app/Http/Controllers/Customer/AuthController.php",
       "name": "AuthController.php",
       "ext": ".php",
@@ -3693,6 +3667,32 @@
       "fileCategory": "core"
     },
     {
+      "id": "resources/views/admin/account/edit.blade.php",
+      "name": "edit.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/booking-layanan/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
       "id": "resources/views/admin/chats/index.blade.php",
       "name": "index.blade.php",
       "ext": ".php",
@@ -3732,6 +3732,45 @@
       "fileCategory": "core"
     },
     {
+      "id": "resources/views/admin/dashboard/analytics.blade.php",
+      "name": "analytics.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/dashboard/ecommerce.blade.php",
+      "name": "ecommerce.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/payments/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
       "id": "resources/views/admin/laporan/index.blade.php",
       "name": "index.blade.php",
       "ext": ".php",
@@ -3758,8 +3797,21 @@
       "fileCategory": "core"
     },
     {
-      "id": "resources/views/admin/dashboard/analytics.blade.php",
-      "name": "analytics.blade.php",
+      "id": "resources/views/admin/kategori-produk/create.blade.php",
+      "name": "create.blade.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/kategori-produk/edit.blade.php",
+      "name": "edit.blade.php",
       "ext": ".php",
       "importsCount": 1,
       "importedByCount": 1,
@@ -3771,8 +3823,8 @@
       "fileCategory": "core"
     },
     {
-      "id": "resources/views/admin/dashboard/ecommerce.blade.php",
-      "name": "ecommerce.blade.php",
+      "id": "resources/views/admin/kategori-produk/index.blade.php",
+      "name": "index.blade.php",
       "ext": ".php",
       "importsCount": 1,
       "importedByCount": 1,
@@ -3780,6 +3832,19 @@
       "isEntryPoint": false,
       "isHotspot": false,
       "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/kategori-produk/_form.blade.php",
+      "name": "_form.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
       "riskLevel": "low",
       "fileCategory": "core"
     },
@@ -3836,71 +3901,6 @@
       "fileCategory": "core"
     },
     {
-      "id": "resources/views/admin/payments/index.blade.php",
-      "name": "index.blade.php",
-      "ext": ".php",
-      "importsCount": 0,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "indirect",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "resources/views/admin/kategori-produk/create.blade.php",
-      "name": "create.blade.php",
-      "ext": ".php",
-      "importsCount": 2,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "resources/views/admin/kategori-produk/edit.blade.php",
-      "name": "edit.blade.php",
-      "ext": ".php",
-      "importsCount": 1,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "resources/views/admin/kategori-produk/index.blade.php",
-      "name": "index.blade.php",
-      "ext": ".php",
-      "importsCount": 1,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "resources/views/admin/kategori-produk/_form.blade.php",
-      "name": "_form.blade.php",
-      "ext": ".php",
-      "importsCount": 0,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "indirect",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
       "id": "resources/views/admin/pegawai/index.blade.php",
       "name": "index.blade.php",
       "ext": ".php",
@@ -3923,6 +3923,19 @@
       "isEntryPoint": false,
       "isHotspot": false,
       "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/spk-layanan/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
       "riskLevel": "low",
       "fileCategory": "core"
     },
@@ -3975,19 +3988,6 @@
       "isEntryPoint": false,
       "isHotspot": false,
       "role": "indirect",
-      "riskLevel": "low",
-      "fileCategory": "core"
-    },
-    {
-      "id": "resources/views/admin/spk-layanan/index.blade.php",
-      "name": "index.blade.php",
-      "ext": ".php",
-      "importsCount": 1,
-      "importedByCount": 1,
-      "isOrphan": false,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "direct",
       "riskLevel": "low",
       "fileCategory": "core"
     },
@@ -4148,6 +4148,45 @@
       "fileCategory": "style"
     },
     {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/mixins/_border-radius.scss",
+      "name": "_border-radius.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/mixins/_caret.scss",
+      "name": "_caret.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/mixins/_misc.scss",
+      "name": "_misc.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
       "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/forms/_floating-labels.scss",
       "name": "_floating-labels.scss",
       "ext": ".scss",
@@ -4237,45 +4276,6 @@
       "role": "orphan",
       "riskLevel": "leaf",
       "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/mixins/_border-radius.scss",
-      "name": "_border-radius.scss",
-      "ext": ".scss",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/mixins/_caret.scss",
-      "name": "_caret.scss",
-      "ext": ".scss",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "style"
-    },
-    {
-      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/mixins/_misc.scss",
-      "name": "_misc.scss",
-      "ext": ".scss",
-      "importsCount": 0,
-      "importedByCount": 0,
-      "isOrphan": true,
-      "isEntryPoint": false,
-      "isHotspot": false,
-      "role": "orphan",
-      "riskLevel": "leaf",
-      "fileCategory": "style"
     }
   ],
   "links": [
@@ -4352,6 +4352,38 @@
       "target": "app/Http/Controllers/Admin/StokController.php"
     },
     {
+      "source": "template fe/detail-produk.html",
+      "target": "template fe/styles.css"
+    },
+    {
+      "source": "template fe/detail-produk.html",
+      "target": "template fe/script.js"
+    },
+    {
+      "source": "template fe/index.html",
+      "target": "template fe/styles.css"
+    },
+    {
+      "source": "template fe/index.html",
+      "target": "template fe/script.js"
+    },
+    {
+      "source": "template fe/layanan.html",
+      "target": "template fe/styles.css"
+    },
+    {
+      "source": "template fe/layanan.html",
+      "target": "template fe/script.js"
+    },
+    {
+      "source": "template fe/produk.html",
+      "target": "template fe/styles.css"
+    },
+    {
+      "source": "template fe/produk.html",
+      "target": "template fe/script.js"
+    },
+    {
       "source": "sneat-bootstrap-html-admin-template-free-main/gulpfile.js",
       "target": "sneat-bootstrap-html-admin-template-free-main/build-config.js"
     },
@@ -4372,44 +4404,16 @@
       "target": "sneat-bootstrap-html-admin-template-free-main/build-config.js"
     },
     {
-      "source": "template fe/detail-produk.html",
-      "target": "template fe/styles.css"
-    },
-    {
-      "source": "template fe/detail-produk.html",
-      "target": "template fe/script.js"
-    },
-    {
-      "source": "template fe/index.html",
-      "target": "template fe/styles.css"
-    },
-    {
-      "source": "template fe/index.html",
-      "target": "template fe/script.js"
-    },
-    {
-      "source": "template fe/layanan.html",
-      "target": "template fe/styles.css"
-    },
-    {
-      "source": "template fe/layanan.html",
-      "target": "template fe/script.js"
-    },
-    {
-      "source": "template fe/produk.html",
-      "target": "template fe/styles.css"
-    },
-    {
-      "source": "template fe/produk.html",
-      "target": "template fe/script.js"
-    },
-    {
       "source": "app/Providers/AppServiceProvider.php",
       "target": "app/Services/Security/FailoverStateService.php"
     },
     {
       "source": "app/Providers/AppServiceProvider.php",
       "target": "app/Services/Security/ReplicationStateService.php"
+    },
+    {
+      "source": "app/Models/Produk.php",
+      "target": "app/Services/SupabaseStorageService.php"
     },
     {
       "source": "app/Services/ChatContextService.php",
@@ -4492,24 +4496,12 @@
       "target": "app/Models/SpkKriteriaLayanan.php"
     },
     {
-      "source": "app/Models/Produk.php",
-      "target": "app/Services/SupabaseStorageService.php"
-    },
-    {
-      "source": "resources/js/app.js",
-      "target": "resources/js/customer.js"
-    },
-    {
       "source": "database/seeders/AdminSeeder.php",
       "target": "app/Models/Admin.php"
     },
     {
-      "source": "sneat-bootstrap-html-admin-template-free-main/js/bootstrap.js",
-      "target": "sneat-bootstrap-html-admin-template-free-main/js/bootstrap.js"
-    },
-    {
-      "source": "sneat-bootstrap-html-admin-template-free-main/tasks/build.js",
-      "target": "sneat-bootstrap-html-admin-template-free-main/webpack.config.js"
+      "source": "resources/js/app.js",
+      "target": "resources/js/customer.js"
     },
     {
       "source": "tests/Feature/AdminCrudTest.php",
@@ -4582,6 +4574,14 @@
     {
       "source": "tests/Feature/CustomerAuthTest.php",
       "target": "app/Models/ServiceScheduleSlot.php"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/js/bootstrap.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/js/bootstrap.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/tasks/build.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/webpack.config.js"
     },
     {
       "source": "sneat-bootstrap-html-admin-template-free-main/html/auth-forgot-password-basic.html",
@@ -5116,6 +5116,10 @@
       "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
     },
     {
+      "source": "app/Http/Middleware/ApplyDatabaseFailover.php",
+      "target": "app/Services/Security/FailoverStateService.php"
+    },
+    {
       "source": "app/Http/Controllers/AuthController.php",
       "target": "resources/views/auth/login.blade.php"
     },
@@ -5130,10 +5134,6 @@
     {
       "source": "app/Http/Controllers/MidtransNotificationController.php",
       "target": "app/Services/MidtransService.php"
-    },
-    {
-      "source": "app/Http/Middleware/ApplyDatabaseFailover.php",
-      "target": "app/Services/Security/FailoverStateService.php"
     },
     {
       "source": "resources/views/admin/dashboard.blade.php",
@@ -5448,10 +5448,6 @@
       "target": "resources/views/admin/stok/edit.blade.php"
     },
     {
-      "source": "resources/views/admin/account/edit.blade.php",
-      "target": "resources/views/layouts/app.blade.php"
-    },
-    {
       "source": "app/Http/Controllers/Customer/AuthController.php",
       "target": "app/Http/Controllers/Controller.php"
     },
@@ -5672,11 +5668,11 @@
       "target": "resources/views/customer/service-booking.blade.php"
     },
     {
-      "source": "resources/views/admin/cia/index.blade.php",
+      "source": "resources/views/admin/account/edit.blade.php",
       "target": "resources/views/layouts/app.blade.php"
     },
     {
-      "source": "resources/views/admin/laporan/index.blade.php",
+      "source": "resources/views/admin/cia/index.blade.php",
       "target": "resources/views/layouts/app.blade.php"
     },
     {
@@ -5688,19 +5684,7 @@
       "target": "resources/views/layouts/app.blade.php"
     },
     {
-      "source": "resources/views/admin/layanan/create.blade.php",
-      "target": "resources/views/layouts/app.blade.php"
-    },
-    {
-      "source": "resources/views/admin/layanan/create.blade.php",
-      "target": "resources/views/admin/layanan/_form.blade.php"
-    },
-    {
-      "source": "resources/views/admin/layanan/edit.blade.php",
-      "target": "resources/views/layouts/app.blade.php"
-    },
-    {
-      "source": "resources/views/admin/layanan/index.blade.php",
+      "source": "resources/views/admin/laporan/index.blade.php",
       "target": "resources/views/layouts/app.blade.php"
     },
     {
@@ -5720,7 +5704,27 @@
       "target": "resources/views/layouts/app.blade.php"
     },
     {
+      "source": "resources/views/admin/layanan/create.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/layanan/create.blade.php",
+      "target": "resources/views/admin/layanan/_form.blade.php"
+    },
+    {
+      "source": "resources/views/admin/layanan/edit.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/layanan/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
       "source": "resources/views/admin/pegawai/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/spk-layanan/index.blade.php",
       "target": "resources/views/layouts/app.blade.php"
     },
     {
@@ -5737,10 +5741,6 @@
     },
     {
       "source": "resources/views/admin/produk/index.blade.php",
-      "target": "resources/views/layouts/app.blade.php"
-    },
-    {
-      "source": "resources/views/admin/spk-layanan/index.blade.php",
       "target": "resources/views/layouts/app.blade.php"
     },
     {
@@ -5776,5 +5776,5 @@
       "target": "resources/views/layouts/app.blade.php"
     }
   ],
-  "timestamp": 1786089989068
+  "timestamp": 1786134185815
 }
