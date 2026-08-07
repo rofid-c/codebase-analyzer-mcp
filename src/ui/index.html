@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spider Map — Kecerdasan Basis Kode</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Use exact verified versions loaded locally to bypass IDM blocks and avoid NPM resolution bugs -->
+  <script src="/vendor/three.min.js"></script>
+  <script src="/vendor/3d-force-graph.min.js"></script>
+  <script src="/vendor/force-graph.min.js"></script>
+</head>
+<body>
+  <div id="graph-container-3d" style="width:100vw;height:100vh;position:fixed;inset:0;z-index:2;visibility:visible;"></div>
+  <div id="graph-container-2d" style="width:100vw;height:100vh;position:fixed;inset:0;z-index:1;visibility:hidden;"></div>
+  
+  <!-- Target Lock Overlay -->
+  <div id="target-lock" style="position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); z-index:10; pointer-events:none; display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s; margin-top: -30px;">
+    <svg width="60" height="60" viewBox="0 0 100 100" style="opacity:0.8;">
+      <!-- Crosshair -->
+      <path d="M 50 5 L 50 20 M 50 95 L 50 80 M 5 50 L 20 50 M 95 50 L 80 50" stroke="#00ffcc" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <!-- Corners -->
+      <path d="M 20 10 L 10 10 L 10 20 M 80 10 L 90 10 L 90 20 M 20 90 L 10 90 L 10 80 M 80 90 L 90 90 L 90 80" stroke="#ff2255" stroke-width="2" fill="none"/>
+    </svg>
+    <div id="target-lock-name" style="background:rgba(0,0,0,0.7); border:1px solid #00ffcc; color:#00ffcc; padding:4px 12px; border-radius:4px; font-family:'JetBrains Mono', monospace; font-size:12px; margin-top:8px; box-shadow:0 0 10px rgba(0,255,204,0.3);">
+      filename.php
+    </div>
+  </div>
+
+  <!-- Top Bar -->
+  <header id="topbar">
+    <div class="topbar-left">
+      <div class="topbar-badge">Kecerdasan Basis Kode</div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-pill"><span class="stat-label">File</span><span id="stats-total" class="stat-val">—</span></div>
+      <div class="stat-pill"><span class="stat-label">Relasi</span><span id="stats-edges" class="stat-val">—</span></div>
+      <div class="stat-pill danger"><span class="stat-label">Titik Panas</span><span id="stats-hotspots" class="stat-val">—</span></div>
+      <div class="stat-pill muted"><span class="stat-label">Terisolasi</span><span id="stats-orphans" class="stat-val">—</span></div>
+    </div>
+
+    <div class="topbar-right" style="display:flex;gap:12px;align-items:center;">
+      <button id="btn-refresh" class="mode-toggle-btn" style="border-color: rgba(255,153,0,0.3); color: var(--orange);">↻ Muat Ulang</button>
+      <button id="btn-mode-toggle" class="mode-toggle-btn">Beralih ke Mode 2D</button>
+    </div>
+  </header>
+
+  <!-- Left Sidebar -->
+  <aside id="sidebar">
+    <div class="logo sidebar-logo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="#00ffcc"/><circle cx="4" cy="4" r="2" fill="#00ffcc" opacity="0.6"/><circle cx="20" cy="4" r="2" fill="#00ffcc" opacity="0.6"/><circle cx="4" cy="20" r="2" fill="#00ffcc" opacity="0.6"/><circle cx="20" cy="20" r="2" fill="#00ffcc" opacity="0.6"/><circle cx="12" cy="2" r="1.5" fill="#00ffcc" opacity="0.4"/><circle cx="22" cy="12" r="1.5" fill="#00ffcc" opacity="0.4"/><line x1="12" y1="12" x2="4" y2="4" stroke="#00ffcc" stroke-width="0.8" opacity="0.4"/><line x1="12" y1="12" x2="20" y2="4" stroke="#00ffcc" stroke-width="0.8" opacity="0.4"/><line x1="12" y1="12" x2="4" y2="20" stroke="#00ffcc" stroke-width="0.8" opacity="0.4"/><line x1="12" y1="12" x2="20" y2="20" stroke="#00ffcc" stroke-width="0.8" opacity="0.4"/></svg>
+      <span>Spider Map</span><sup>3D/2D</sup>
+    </div>
+
+    <!-- Node Info Panel -->
+    <section id="node-panel" class="panel hidden">
+      <div class="panel-header">
+        <span class="panel-icon">◉</span> Detail Node
+      </div>
+      <div class="panel-body">
+        <div id="node-id" class="node-id-text">—</div>
+        <div id="node-stats"></div>
+        <div class="btn-row">
+          <button id="btn-simulate" class="btn-primary">⚡ Simulasi Dampak</button>
+          <button id="btn-reset" class="btn-ghost">↺ Reset Tampilan</button>
+        </div>
+        <div id="impact-summary" class="impact-box hidden"></div>
+      </div>
+    </section>
+
+    <!-- File Structure Panel -->
+    <section class="panel" style="flex: 1; display: flex; flex-direction: column; min-height: 200px;">
+      <div class="panel-header">
+        <span class="panel-icon">📂</span> Penjelajah File
+      </div>
+      <div class="panel-body" style="padding: 0; flex: 1; overflow-y: auto;">
+        <div id="file-tree" class="file-tree-list"></div>
+      </div>
+    </section>
+
+    <!-- Bug Pattern Detection -->
+    <section class="panel" style="flex-shrink: 0;">
+      <div class="panel-header">
+        <span class="panel-icon">🔬</span> Deteksi Pola Bug
+      </div>
+      <div class="panel-body">
+        <div id="bug-list"></div>
+      </div>
+    </section>
+
+    <!-- Legend -->
+    <section class="panel">
+      <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
+        <span><span class="panel-icon">◈</span> Mode Warna</span>
+        <select id="color-mode" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 2px 4px; border-radius: 4px; font-size: 11px;">
+          <option value="fileCategory">Kategori File</option>
+          <option value="risk">Tingkat Risiko (Fan-in)</option>
+          <option value="role">Peran Grafik</option>
+        </select>
+      </div>
+      <div class="panel-body" id="legend-container">
+        <!-- Dynamic Legend Injected by main.ts -->
+      </div>
+    </section>
+
+    <div class="controls-hint">
+      <span>Geser</span> untuk putar/pindah · <span>Scroll</span> untuk zoom · <span>Klik</span> node untuk analisis
+    </div>
+  </aside>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,5780 @@
+{
+  "nodes": [
+    {
+      "id": "composer.json",
+      "name": "composer.json",
+      "ext": ".json",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "config"
+    },
+    {
+      "id": "package-lock.json",
+      "name": "package-lock.json",
+      "ext": ".json",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "config"
+    },
+    {
+      "id": "package.json",
+      "name": "package.json",
+      "ext": ".json",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "config"
+    },
+    {
+      "id": "phpunit.xml",
+      "name": "phpunit.xml",
+      "ext": ".xml",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "utility"
+    },
+    {
+      "id": "README.md",
+      "name": "README.md",
+      "ext": ".md",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "doc"
+    },
+    {
+      "id": "vite.config.js",
+      "name": "vite.config.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "bootstrap/app.php",
+      "name": "app.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "bootstrap/providers.php",
+      "name": "providers.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/app.php",
+      "name": "app.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/auth.php",
+      "name": "auth.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/cache.php",
+      "name": "cache.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/database.php",
+      "name": "database.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/filesystems.php",
+      "name": "filesystems.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/logging.php",
+      "name": "logging.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/mail.php",
+      "name": "mail.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/queue.php",
+      "name": "queue.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/security.php",
+      "name": "security.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/services.php",
+      "name": "services.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "config/session.php",
+      "name": "session.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "routes/console.php",
+      "name": "console.php",
+      "ext": ".php",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "routes/web.php",
+      "name": "web.php",
+      "ext": ".php",
+      "importsCount": 14,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/build-config.js",
+      "name": "build-config.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 3,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/CHANGELOG.md",
+      "name": "CHANGELOG.md",
+      "ext": ".md",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "doc"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/documentation.html",
+      "name": "documentation.html",
+      "ext": ".html",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/gulpfile.js",
+      "name": "gulpfile.js",
+      "ext": ".js",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/hire-us.html",
+      "name": "hire-us.html",
+      "ext": ".html",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/LICENSE.md",
+      "name": "LICENSE.md",
+      "ext": ".md",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "doc"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/package.json",
+      "name": "package.json",
+      "ext": ".json",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "config"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/README.md",
+      "name": "README.md",
+      "ext": ".md",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "doc"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/webpack.config.js",
+      "name": "webpack.config.js",
+      "ext": ".js",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "tests/TestCase.php",
+      "name": "TestCase.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "template fe/detail-produk.html",
+      "name": "detail-produk.html",
+      "ext": ".html",
+      "importsCount": 2,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "template fe/index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "importsCount": 2,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "template fe/layanan.html",
+      "name": "layanan.html",
+      "ext": ".html",
+      "importsCount": 2,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "template fe/produk.html",
+      "name": "produk.html",
+      "ext": ".html",
+      "importsCount": 2,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "template fe/script.js",
+      "name": "script.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "template fe/styles.css",
+      "name": "styles.css",
+      "ext": ".css",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "style"
+    },
+    {
+      "id": "app/Providers/AppServiceProvider.php",
+      "name": "AppServiceProvider.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/factories/UserFactory.php",
+      "name": "UserFactory.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/ChatContextService.php",
+      "name": "ChatContextService.php",
+      "ext": ".php",
+      "importsCount": 6,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/LaporanPenjualanService.php",
+      "name": "LaporanPenjualanService.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/LayananMetricSyncService.php",
+      "name": "LayananMetricSyncService.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/MidtransService.php",
+      "name": "MidtransService.php",
+      "ext": ".php",
+      "importsCount": 3,
+      "importedByCount": 5,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "moderate",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/PelangganIdentityService.php",
+      "name": "PelangganIdentityService.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 3,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/RatingAggregateService.php",
+      "name": "RatingAggregateService.php",
+      "ext": ".php",
+      "importsCount": 4,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/SpkLayananService.php",
+      "name": "SpkLayananService.php",
+      "ext": ".php",
+      "importsCount": 3,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/SupabaseStorageService.php",
+      "name": "SupabaseStorageService.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "bootstrap/cache/packages.php",
+      "name": "packages.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "bootstrap/cache/services.php",
+      "name": "services.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/Admin.php",
+      "name": "Admin.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/ChatMessage.php",
+      "name": "ChatMessage.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 5,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "moderate",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/ChatThread.php",
+      "name": "ChatThread.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 5,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "moderate",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/CustomerAddress.php",
+      "name": "CustomerAddress.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/CustomerPet.php",
+      "name": "CustomerPet.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/DetailPesanan.php",
+      "name": "DetailPesanan.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/KategoriProduk.php",
+      "name": "KategoriProduk.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/Layanan.php",
+      "name": "Layanan.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 9,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "indirect",
+      "riskLevel": "moderate",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/Pegawai.php",
+      "name": "Pegawai.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/Pelanggan.php",
+      "name": "Pelanggan.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/Pembayaran.php",
+      "name": "Pembayaran.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/Pesanan.php",
+      "name": "Pesanan.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/ProductReview.php",
+      "name": "ProductReview.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/Produk.php",
+      "name": "Produk.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 7,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "direct",
+      "riskLevel": "moderate",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/Promo.php",
+      "name": "Promo.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/ServiceBooking.php",
+      "name": "ServiceBooking.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 12,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "indirect",
+      "riskLevel": "critical",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/ServiceBookingOption.php",
+      "name": "ServiceBookingOption.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/ServiceReview.php",
+      "name": "ServiceReview.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/ServiceScheduleSlot.php",
+      "name": "ServiceScheduleSlot.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/SpkHasilLayanan.php",
+      "name": "SpkHasilLayanan.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/SpkKriteriaLayanan.php",
+      "name": "SpkKriteriaLayanan.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/Stok.php",
+      "name": "Stok.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Models/User.php",
+      "name": "User.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 6,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "indirect",
+      "riskLevel": "moderate",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/css/app.css",
+      "name": "app.css",
+      "ext": ".css",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "resources/js/app.js",
+      "name": "app.js",
+      "ext": ".js",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/js/bootstrap.js",
+      "name": "bootstrap.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/js/customer.js",
+      "name": "customer.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/seeders/AdminSeeder.php",
+      "name": "AdminSeeder.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/seeders/DatabaseSeeder.php",
+      "name": "DatabaseSeeder.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/welcome.blade.php",
+      "name": "welcome.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/sass/app.scss",
+      "name": "app.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "resources/sass/_variables.scss",
+      "name": "_variables.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "name": "0001_01_01_000000_create_users_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "name": "0001_01_01_000001_create_cache_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "name": "0001_01_01_000002_create_jobs_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_05_14_000000_add_pricing_fields_to_layanan_table.php",
+      "name": "2026_05_14_000000_add_pricing_fields_to_layanan_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_05_14_000001_add_category_specific_fields_to_layanan_table.php",
+      "name": "2026_05_14_000001_add_category_specific_fields_to_layanan_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_05_14_000002_add_payment_chart_indexes.php",
+      "name": "2026_05_14_000002_add_payment_chart_indexes.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_05_20_000000_create_pegawai_table.php",
+      "name": "2026_05_20_000000_create_pegawai_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_05_20_000001_add_customer_profile_fields_to_users_table.php",
+      "name": "2026_05_20_000001_add_customer_profile_fields_to_users_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_05_25_000000_create_promo_table.php",
+      "name": "2026_05_25_000000_create_promo_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_05_26_000000_add_customer_profile_details_to_users_table.php",
+      "name": "2026_05_26_000000_add_customer_profile_details_to_users_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_01_000000_create_customer_pets_table.php",
+      "name": "2026_06_01_000000_create_customer_pets_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_01_000001_create_customer_addresses_table.php",
+      "name": "2026_06_01_000001_create_customer_addresses_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_01_000002_create_service_bookings_table.php",
+      "name": "2026_06_01_000002_create_service_bookings_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_01_000003_add_payment_ready_fields_to_service_bookings.php",
+      "name": "2026_06_01_000003_add_payment_ready_fields_to_service_bookings.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_02_000000_add_booking_hours_to_layanan_table.php",
+      "name": "2026_06_02_000000_add_booking_hours_to_layanan_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_04_000000_create_chat_tables.php",
+      "name": "2026_06_04_000000_create_chat_tables.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_04_010000_add_edit_delete_fields_to_chat_messages.php",
+      "name": "2026_06_04_010000_add_edit_delete_fields_to_chat_messages.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_05_000000_add_pickup_fields_to_service_bookings.php",
+      "name": "2026_06_05_000000_add_pickup_fields_to_service_bookings.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_05_010000_add_midtrans_fields_to_service_bookings.php",
+      "name": "2026_06_05_010000_add_midtrans_fields_to_service_bookings.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_06_000000_add_midtrans_fields_to_pembayaran_table.php",
+      "name": "2026_06_06_000000_add_midtrans_fields_to_pembayaran_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_06_010000_add_checkout_address_to_pesanan_table.php",
+      "name": "2026_06_06_010000_add_checkout_address_to_pesanan_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_06_020000_create_customer_review_tables.php",
+      "name": "2026_06_06_020000_create_customer_review_tables.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_06_030000_update_pesanan_status_check_for_shipping.php",
+      "name": "2026_06_06_030000_update_pesanan_status_check_for_shipping.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_06_040000_add_extra_fields_to_review_tables.php",
+      "name": "2026_06_06_040000_add_extra_fields_to_review_tables.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_06_060000_add_delivery_and_context_to_chat_messages.php",
+      "name": "2026_06_06_060000_add_delivery_and_context_to_chat_messages.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "database/migrations/2026_06_13_000000_create_database_backup_runs_table.php",
+      "name": "2026_06_13_000000_create_database_backup_runs_table.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/js/bootstrap.js",
+      "name": "bootstrap.js",
+      "ext": ".js",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/js/helpers.js",
+      "name": "helpers.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/js/menu.js",
+      "name": "menu.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/core.scss",
+      "name": "core.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended.scss",
+      "name": "_bootstrap-extended.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap.scss",
+      "name": "_bootstrap.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_colors.scss",
+      "name": "_colors.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components.scss",
+      "name": "_components.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_custom-styles.scss",
+      "name": "_custom-styles.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/tasks/build.js",
+      "name": "build.js",
+      "ext": ".js",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/tasks/prod.js",
+      "name": "prod.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "tests/Feature/AdminCrudTest.php",
+      "name": "AdminCrudTest.php",
+      "ext": ".php",
+      "importsCount": 9,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "tests/Feature/AuthDatabaseSmokeTest.php",
+      "name": "AuthDatabaseSmokeTest.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "tests/Feature/AuthPagesTest.php",
+      "name": "AuthPagesTest.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "tests/Feature/CustomerAuthTest.php",
+      "name": "CustomerAuthTest.php",
+      "ext": ".php",
+      "importsCount": 7,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "tests/Feature/ExampleTest.php",
+      "name": "ExampleTest.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "tests/Unit/ExampleTest.php",
+      "name": "ExampleTest.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "tools/dos-proxy/rate-limit-proxy.cjs",
+      "name": "rate-limit-proxy.cjs",
+      "ext": ".cjs",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/auth-forgot-password-basic.html",
+      "name": "auth-forgot-password-basic.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/auth-login-basic.html",
+      "name": "auth-login-basic.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/auth-register-basic.html",
+      "name": "auth-register-basic.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/cards-basic.html",
+      "name": "cards-basic.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/extended-ui-perfect-scrollbar.html",
+      "name": "extended-ui-perfect-scrollbar.html",
+      "ext": ".html",
+      "importsCount": 4,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/extended-ui-text-divider.html",
+      "name": "extended-ui-text-divider.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/form-layouts-horizontal.html",
+      "name": "form-layouts-horizontal.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/form-layouts-vertical.html",
+      "name": "form-layouts-vertical.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/forms-basic-inputs.html",
+      "name": "forms-basic-inputs.html",
+      "ext": ".html",
+      "importsCount": 4,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/forms-input-groups.html",
+      "name": "forms-input-groups.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/icons-boxicons.html",
+      "name": "icons-boxicons.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "importsCount": 4,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/layouts-blank.html",
+      "name": "layouts-blank.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/layouts-container.html",
+      "name": "layouts-container.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/layouts-fluid.html",
+      "name": "layouts-fluid.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/layouts-without-menu.html",
+      "name": "layouts-without-menu.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/layouts-without-navbar.html",
+      "name": "layouts-without-navbar.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-account.html",
+      "name": "pages-account-settings-account.html",
+      "ext": ".html",
+      "importsCount": 4,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-connections.html",
+      "name": "pages-account-settings-connections.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-notifications.html",
+      "name": "pages-account-settings-notifications.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/pages-misc-error.html",
+      "name": "pages-misc-error.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/pages-misc-under-maintenance.html",
+      "name": "pages-misc-under-maintenance.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/tables-basic.html",
+      "name": "tables-basic.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-accordion.html",
+      "name": "ui-accordion.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-alerts.html",
+      "name": "ui-alerts.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-badges.html",
+      "name": "ui-badges.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-buttons.html",
+      "name": "ui-buttons.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-carousel.html",
+      "name": "ui-carousel.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-collapse.html",
+      "name": "ui-collapse.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-dropdowns.html",
+      "name": "ui-dropdowns.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-footer.html",
+      "name": "ui-footer.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-list-groups.html",
+      "name": "ui-list-groups.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-modals.html",
+      "name": "ui-modals.html",
+      "ext": ".html",
+      "importsCount": 4,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-navbar.html",
+      "name": "ui-navbar.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-offcanvas.html",
+      "name": "ui-offcanvas.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-pagination-breadcrumbs.html",
+      "name": "ui-pagination-breadcrumbs.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-progress.html",
+      "name": "ui-progress.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-spinners.html",
+      "name": "ui-spinners.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-tabs-pills.html",
+      "name": "ui-tabs-pills.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-toasts.html",
+      "name": "ui-toasts.html",
+      "ext": ".html",
+      "importsCount": 4,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-tooltips-popovers.html",
+      "name": "ui-tooltips-popovers.html",
+      "ext": ".html",
+      "importsCount": 4,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/html/ui-typography.html",
+      "name": "ui-typography.html",
+      "ext": ".html",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "view"
+    },
+    {
+      "id": "app/Http/Controllers/AuthController.php",
+      "name": "AuthController.php",
+      "ext": ".php",
+      "importsCount": 3,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Controller.php",
+      "name": "Controller.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 21,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "indirect",
+      "riskLevel": "critical",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/MidtransNotificationController.php",
+      "name": "MidtransNotificationController.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Middleware/ApplyDatabaseFailover.php",
+      "name": "ApplyDatabaseFailover.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/dashboard.blade.php",
+      "name": "dashboard.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/Security/DatabaseBackupService.php",
+      "name": "DatabaseBackupService.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/Security/DatabaseHealthService.php",
+      "name": "DatabaseHealthService.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/Security/DatabaseReplicationService.php",
+      "name": "DatabaseReplicationService.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/Security/FailoverStateService.php",
+      "name": "FailoverStateService.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 4,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Services/Security/ReplicationStateService.php",
+      "name": "ReplicationStateService.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 2,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/auth/login.blade.php",
+      "name": "login.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/dashboard.blade.php",
+      "name": "dashboard.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/payment.blade.php",
+      "name": "payment.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/product-checkout.blade.php",
+      "name": "product-checkout.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/product-detail.blade.php",
+      "name": "product-detail.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/product-payment.blade.php",
+      "name": "product-payment.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/products.blade.php",
+      "name": "products.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/profile-addresses.blade.php",
+      "name": "profile-addresses.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/profile-pets.blade.php",
+      "name": "profile-pets.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/profile.blade.php",
+      "name": "profile.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/promos.blade.php",
+      "name": "promos.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/service-booking.blade.php",
+      "name": "service-booking.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/services.blade.php",
+      "name": "services.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/layouts/app.blade.php",
+      "name": "app.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 24,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "indirect",
+      "riskLevel": "critical",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/layouts/customer.blade.php",
+      "name": "customer.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css",
+      "name": "demo.css",
+      "ext": ".css",
+      "importsCount": 0,
+      "importedByCount": 43,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "indirect",
+      "riskLevel": "critical",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/fonts/iconify/iconify.js",
+      "name": "iconify.js",
+      "ext": ".js",
+      "importsCount": 1,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/apex-charts/apex-charts.scss",
+      "name": "apex-charts.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/apex-charts/apexcharts.js",
+      "name": "apexcharts.js",
+      "ext": ".js",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js",
+      "name": "config.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 42,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "indirect",
+      "riskLevel": "critical",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/js/dashboards-analytics.js",
+      "name": "dashboards-analytics.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/js/extended-ui-perfect-scrollbar.js",
+      "name": "extended-ui-perfect-scrollbar.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/js/form-basic-inputs.js",
+      "name": "form-basic-inputs.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js",
+      "name": "main.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 42,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": true,
+      "role": "indirect",
+      "riskLevel": "critical",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/js/pages-account-settings-account.js",
+      "name": "pages-account-settings-account.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/js/ui-modals.js",
+      "name": "ui-modals.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/js/ui-popover.js",
+      "name": "ui-popover.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/assets/js/ui-toasts.js",
+      "name": "ui-toasts.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/perfect-scrollbar/perfect-scrollbar.js",
+      "name": "perfect-scrollbar.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/perfect-scrollbar/perfect-scrollbar.scss",
+      "name": "perfect-scrollbar.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/jquery/jquery.js",
+      "name": "jquery.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/highlight/highlight-github.scss",
+      "name": "highlight-github.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/highlight/highlight.js",
+      "name": "highlight.js",
+      "ext": ".js",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/highlight/highlight.scss",
+      "name": "highlight.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/popper/popper.js",
+      "name": "popper.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/libs/masonry/masonry.js",
+      "name": "masonry.js",
+      "ext": ".js",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/pages/page-auth.scss",
+      "name": "page-auth.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/pages/page-icons.scss",
+      "name": "page-icons.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/pages/page-misc.scss",
+      "name": "page-misc.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_custom-variables/_bootstrap-extended.scss",
+      "name": "_bootstrap-extended.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_custom-variables/_components.scss",
+      "name": "_components.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_app-brand.scss",
+      "name": "_app-brand.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_avatar.scss",
+      "name": "_avatar.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_base.scss",
+      "name": "_base.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_common.scss",
+      "name": "_common.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_footer.scss",
+      "name": "_footer.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_include.scss",
+      "name": "_include.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_layout.scss",
+      "name": "_layout.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_menu.scss",
+      "name": "_menu.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_root.scss",
+      "name": "_root.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_text-divider.scss",
+      "name": "_text-divider.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_components/_variables.scss",
+      "name": "_variables.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_accordion.scss",
+      "name": "_accordion.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_alert.scss",
+      "name": "_alert.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_badge.scss",
+      "name": "_badge.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_breadcrumb.scss",
+      "name": "_breadcrumb.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_button-group.scss",
+      "name": "_button-group.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_buttons.scss",
+      "name": "_buttons.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_card.scss",
+      "name": "_card.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_carousel.scss",
+      "name": "_carousel.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_dropdown.scss",
+      "name": "_dropdown.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_forms.scss",
+      "name": "_forms.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_functions.scss",
+      "name": "_functions.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_helpers.scss",
+      "name": "_helpers.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_include.scss",
+      "name": "_include.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_list-group.scss",
+      "name": "_list-group.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_mixins.scss",
+      "name": "_mixins.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_modal.scss",
+      "name": "_modal.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_nav.scss",
+      "name": "_nav.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_navbar.scss",
+      "name": "_navbar.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_offcanvas.scss",
+      "name": "_offcanvas.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_pagination.scss",
+      "name": "_pagination.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_popover.scss",
+      "name": "_popover.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_progress.scss",
+      "name": "_progress.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_reboot.scss",
+      "name": "_reboot.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_root.scss",
+      "name": "_root.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_spinners.scss",
+      "name": "_spinners.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_tables.scss",
+      "name": "_tables.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_toasts.scss",
+      "name": "_toasts.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_tooltip.scss",
+      "name": "_tooltip.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_type.scss",
+      "name": "_type.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_utilities.scss",
+      "name": "_utilities.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/_variables.scss",
+      "name": "_variables.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/AccountSettingController.php",
+      "name": "AccountSettingController.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/ChatController.php",
+      "name": "ChatController.php",
+      "ext": ".php",
+      "importsCount": 8,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/CiaController.php",
+      "name": "CiaController.php",
+      "ext": ".php",
+      "importsCount": 7,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/KategoriProdukController.php",
+      "name": "KategoriProdukController.php",
+      "ext": ".php",
+      "importsCount": 5,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/LaporanController.php",
+      "name": "LaporanController.php",
+      "ext": ".php",
+      "importsCount": 3,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/LayananController.php",
+      "name": "LayananController.php",
+      "ext": ".php",
+      "importsCount": 5,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/PaymentTransactionController.php",
+      "name": "PaymentTransactionController.php",
+      "ext": ".php",
+      "importsCount": 4,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/PegawaiController.php",
+      "name": "PegawaiController.php",
+      "ext": ".php",
+      "importsCount": 3,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/ProductOrderController.php",
+      "name": "ProductOrderController.php",
+      "ext": ".php",
+      "importsCount": 5,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/ProdukController.php",
+      "name": "ProdukController.php",
+      "ext": ".php",
+      "importsCount": 7,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/PromoController.php",
+      "name": "PromoController.php",
+      "ext": ".php",
+      "importsCount": 7,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/ServiceBookingController.php",
+      "name": "ServiceBookingController.php",
+      "ext": ".php",
+      "importsCount": 6,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/SpkLayananController.php",
+      "name": "SpkLayananController.php",
+      "ext": ".php",
+      "importsCount": 3,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Admin/StokController.php",
+      "name": "StokController.php",
+      "ext": ".php",
+      "importsCount": 7,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/account/edit.blade.php",
+      "name": "edit.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/booking-layanan/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Customer/AuthController.php",
+      "name": "AuthController.php",
+      "ext": ".php",
+      "importsCount": 13,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Customer/ChatController.php",
+      "name": "ChatController.php",
+      "ext": ".php",
+      "importsCount": 3,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Customer/PaymentController.php",
+      "name": "PaymentController.php",
+      "ext": ".php",
+      "importsCount": 4,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Customer/ProductCheckoutController.php",
+      "name": "ProductCheckoutController.php",
+      "ext": ".php",
+      "importsCount": 9,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Customer/ProfileController.php",
+      "name": "ProfileController.php",
+      "ext": ".php",
+      "importsCount": 11,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Customer/ReviewController.php",
+      "name": "ReviewController.php",
+      "ext": ".php",
+      "importsCount": 8,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "app/Http/Controllers/Customer/ServiceBookingController.php",
+      "name": "ServiceBookingController.php",
+      "ext": ".php",
+      "importsCount": 7,
+      "importedByCount": 0,
+      "isOrphan": false,
+      "isEntryPoint": true,
+      "isHotspot": false,
+      "role": "entry",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/chats/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/chats/show.blade.php",
+      "name": "show.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/cia/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/laporan/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/laporan/pdf.blade.php",
+      "name": "pdf.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/dashboard/analytics.blade.php",
+      "name": "analytics.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/dashboard/ecommerce.blade.php",
+      "name": "ecommerce.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/layanan/create.blade.php",
+      "name": "create.blade.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/layanan/edit.blade.php",
+      "name": "edit.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/layanan/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/layanan/_form.blade.php",
+      "name": "_form.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/payments/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/kategori-produk/create.blade.php",
+      "name": "create.blade.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/kategori-produk/edit.blade.php",
+      "name": "edit.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/kategori-produk/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/kategori-produk/_form.blade.php",
+      "name": "_form.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/pegawai/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/product-orders/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/produk/create.blade.php",
+      "name": "create.blade.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/produk/edit.blade.php",
+      "name": "edit.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/produk/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/produk/_form.blade.php",
+      "name": "_form.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/spk-layanan/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/promo/create.blade.php",
+      "name": "create.blade.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/promo/edit.blade.php",
+      "name": "edit.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/promo/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/promo/_form.blade.php",
+      "name": "_form.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/stok/create.blade.php",
+      "name": "create.blade.php",
+      "ext": ".php",
+      "importsCount": 2,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/stok/edit.blade.php",
+      "name": "edit.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/stok/index.blade.php",
+      "name": "index.blade.php",
+      "ext": ".php",
+      "importsCount": 1,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "direct",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/admin/stok/_form.blade.php",
+      "name": "_form.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/auth/login.blade.php",
+      "name": "login.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/auth/register.blade.php",
+      "name": "register.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "resources/views/customer/partials/chat-widget.blade.php",
+      "name": "chat-widget.blade.php",
+      "ext": ".php",
+      "importsCount": 0,
+      "importedByCount": 1,
+      "isOrphan": false,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "indirect",
+      "riskLevel": "low",
+      "fileCategory": "core"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/helpers/_color-bg.scss",
+      "name": "_color-bg.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/forms/_floating-labels.scss",
+      "name": "_floating-labels.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/forms/_form-check.scss",
+      "name": "_form-check.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/forms/_form-control.scss",
+      "name": "_form-control.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/forms/_form-range.scss",
+      "name": "_form-range.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/forms/_form-select.scss",
+      "name": "_form-select.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/forms/_input-group.scss",
+      "name": "_input-group.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/forms/_labels.scss",
+      "name": "_labels.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/mixins/_border-radius.scss",
+      "name": "_border-radius.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/mixins/_caret.scss",
+      "name": "_caret.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    },
+    {
+      "id": "sneat-bootstrap-html-admin-template-free-main/scss/_bootstrap-extended/mixins/_misc.scss",
+      "name": "_misc.scss",
+      "ext": ".scss",
+      "importsCount": 0,
+      "importedByCount": 0,
+      "isOrphan": true,
+      "isEntryPoint": false,
+      "isHotspot": false,
+      "role": "orphan",
+      "riskLevel": "leaf",
+      "fileCategory": "style"
+    }
+  ],
+  "links": [
+    {
+      "source": "bootstrap/app.php",
+      "target": "app/Http/Middleware/ApplyDatabaseFailover.php"
+    },
+    {
+      "source": "routes/console.php",
+      "target": "app/Services/Security/DatabaseHealthService.php"
+    },
+    {
+      "source": "routes/console.php",
+      "target": "app/Services/Security/DatabaseBackupService.php"
+    },
+    {
+      "source": "routes/console.php",
+      "target": "app/Services/Security/DatabaseReplicationService.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/AuthController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/MidtransNotificationController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/AccountSettingController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/KategoriProdukController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/LayananController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/LaporanController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/PaymentTransactionController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/PegawaiController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/ProductOrderController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/ProdukController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/PromoController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/CiaController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/SpkLayananController.php"
+    },
+    {
+      "source": "routes/web.php",
+      "target": "app/Http/Controllers/Admin/StokController.php"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/gulpfile.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/build-config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/gulpfile.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/tasks/build.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/gulpfile.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/tasks/prod.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/index.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/webpack.config.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/build-config.js"
+    },
+    {
+      "source": "template fe/detail-produk.html",
+      "target": "template fe/styles.css"
+    },
+    {
+      "source": "template fe/detail-produk.html",
+      "target": "template fe/script.js"
+    },
+    {
+      "source": "template fe/index.html",
+      "target": "template fe/styles.css"
+    },
+    {
+      "source": "template fe/index.html",
+      "target": "template fe/script.js"
+    },
+    {
+      "source": "template fe/layanan.html",
+      "target": "template fe/styles.css"
+    },
+    {
+      "source": "template fe/layanan.html",
+      "target": "template fe/script.js"
+    },
+    {
+      "source": "template fe/produk.html",
+      "target": "template fe/styles.css"
+    },
+    {
+      "source": "template fe/produk.html",
+      "target": "template fe/script.js"
+    },
+    {
+      "source": "app/Providers/AppServiceProvider.php",
+      "target": "app/Services/Security/FailoverStateService.php"
+    },
+    {
+      "source": "app/Providers/AppServiceProvider.php",
+      "target": "app/Services/Security/ReplicationStateService.php"
+    },
+    {
+      "source": "app/Services/ChatContextService.php",
+      "target": "app/Models/ChatMessage.php"
+    },
+    {
+      "source": "app/Services/ChatContextService.php",
+      "target": "app/Models/ChatThread.php"
+    },
+    {
+      "source": "app/Services/ChatContextService.php",
+      "target": "app/Models/Pembayaran.php"
+    },
+    {
+      "source": "app/Services/ChatContextService.php",
+      "target": "app/Models/Pesanan.php"
+    },
+    {
+      "source": "app/Services/ChatContextService.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "app/Services/ChatContextService.php",
+      "target": "app/Models/User.php"
+    },
+    {
+      "source": "app/Services/LayananMetricSyncService.php",
+      "target": "app/Models/Layanan.php"
+    },
+    {
+      "source": "app/Services/LayananMetricSyncService.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "app/Services/MidtransService.php",
+      "target": "app/Models/Pembayaran.php"
+    },
+    {
+      "source": "app/Services/MidtransService.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "app/Services/MidtransService.php",
+      "target": "app/Models/ServiceScheduleSlot.php"
+    },
+    {
+      "source": "app/Services/PelangganIdentityService.php",
+      "target": "app/Models/Pelanggan.php"
+    },
+    {
+      "source": "app/Services/PelangganIdentityService.php",
+      "target": "app/Models/User.php"
+    },
+    {
+      "source": "app/Services/RatingAggregateService.php",
+      "target": "app/Models/Layanan.php"
+    },
+    {
+      "source": "app/Services/RatingAggregateService.php",
+      "target": "app/Models/ProductReview.php"
+    },
+    {
+      "source": "app/Services/RatingAggregateService.php",
+      "target": "app/Models/Produk.php"
+    },
+    {
+      "source": "app/Services/RatingAggregateService.php",
+      "target": "app/Models/ServiceReview.php"
+    },
+    {
+      "source": "app/Services/SpkLayananService.php",
+      "target": "app/Models/Layanan.php"
+    },
+    {
+      "source": "app/Services/SpkLayananService.php",
+      "target": "app/Models/SpkHasilLayanan.php"
+    },
+    {
+      "source": "app/Services/SpkLayananService.php",
+      "target": "app/Models/SpkKriteriaLayanan.php"
+    },
+    {
+      "source": "app/Models/Produk.php",
+      "target": "app/Services/SupabaseStorageService.php"
+    },
+    {
+      "source": "resources/js/app.js",
+      "target": "resources/js/customer.js"
+    },
+    {
+      "source": "database/seeders/AdminSeeder.php",
+      "target": "app/Models/Admin.php"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/js/bootstrap.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/js/bootstrap.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/tasks/build.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/webpack.config.js"
+    },
+    {
+      "source": "tests/Feature/AdminCrudTest.php",
+      "target": "app/Models/Admin.php"
+    },
+    {
+      "source": "tests/Feature/AdminCrudTest.php",
+      "target": "app/Models/ChatMessage.php"
+    },
+    {
+      "source": "tests/Feature/AdminCrudTest.php",
+      "target": "app/Models/ChatThread.php"
+    },
+    {
+      "source": "tests/Feature/AdminCrudTest.php",
+      "target": "app/Models/KategoriProduk.php"
+    },
+    {
+      "source": "tests/Feature/AdminCrudTest.php",
+      "target": "app/Models/Produk.php"
+    },
+    {
+      "source": "tests/Feature/AdminCrudTest.php",
+      "target": "app/Models/Layanan.php"
+    },
+    {
+      "source": "tests/Feature/AdminCrudTest.php",
+      "target": "app/Models/Pegawai.php"
+    },
+    {
+      "source": "tests/Feature/AdminCrudTest.php",
+      "target": "app/Models/Stok.php"
+    },
+    {
+      "source": "tests/Feature/AdminCrudTest.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "tests/Feature/AuthDatabaseSmokeTest.php",
+      "target": "app/Models/Admin.php"
+    },
+    {
+      "source": "tests/Feature/AuthPagesTest.php",
+      "target": "app/Models/Admin.php"
+    },
+    {
+      "source": "tests/Feature/CustomerAuthTest.php",
+      "target": "app/Models/User.php"
+    },
+    {
+      "source": "tests/Feature/CustomerAuthTest.php",
+      "target": "app/Models/CustomerAddress.php"
+    },
+    {
+      "source": "tests/Feature/CustomerAuthTest.php",
+      "target": "app/Models/ChatMessage.php"
+    },
+    {
+      "source": "tests/Feature/CustomerAuthTest.php",
+      "target": "app/Models/ChatThread.php"
+    },
+    {
+      "source": "tests/Feature/CustomerAuthTest.php",
+      "target": "app/Models/Layanan.php"
+    },
+    {
+      "source": "tests/Feature/CustomerAuthTest.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "tests/Feature/CustomerAuthTest.php",
+      "target": "app/Models/ServiceScheduleSlot.php"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/auth-forgot-password-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/auth-forgot-password-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/auth-forgot-password-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/auth-login-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/auth-login-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/auth-login-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/auth-register-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/auth-register-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/auth-register-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/cards-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/cards-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/cards-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/extended-ui-perfect-scrollbar.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/extended-ui-perfect-scrollbar.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/extended-ui-perfect-scrollbar.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/extended-ui-perfect-scrollbar.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/extended-ui-perfect-scrollbar.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/extended-ui-text-divider.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/extended-ui-text-divider.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/extended-ui-text-divider.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/form-layouts-horizontal.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/form-layouts-horizontal.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/form-layouts-horizontal.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/form-layouts-vertical.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/form-layouts-vertical.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/form-layouts-vertical.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/forms-basic-inputs.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/forms-basic-inputs.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/forms-basic-inputs.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/forms-basic-inputs.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/form-basic-inputs.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/forms-input-groups.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/forms-input-groups.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/forms-input-groups.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/icons-boxicons.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/icons-boxicons.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/icons-boxicons.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/index.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/index.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/index.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/index.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/dashboards-analytics.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-blank.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-blank.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-blank.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-container.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-container.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-container.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-fluid.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-fluid.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-fluid.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-without-menu.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-without-menu.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-without-menu.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-without-navbar.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-without-navbar.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/layouts-without-navbar.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-account.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-account.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-account.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-account.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/pages-account-settings-account.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-connections.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-connections.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-connections.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-notifications.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-notifications.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-account-settings-notifications.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-misc-error.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-misc-error.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-misc-error.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-misc-under-maintenance.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-misc-under-maintenance.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/pages-misc-under-maintenance.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/tables-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/tables-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/tables-basic.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-accordion.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-accordion.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-accordion.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-alerts.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-alerts.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-alerts.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-badges.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-badges.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-badges.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-buttons.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-buttons.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-buttons.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-carousel.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-carousel.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-carousel.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-collapse.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-collapse.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-collapse.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-dropdowns.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-dropdowns.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-dropdowns.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-footer.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-footer.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-footer.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-list-groups.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-list-groups.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-list-groups.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-modals.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-modals.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-modals.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-modals.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/ui-modals.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-navbar.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-navbar.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-navbar.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-offcanvas.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-offcanvas.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-offcanvas.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-pagination-breadcrumbs.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-pagination-breadcrumbs.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-pagination-breadcrumbs.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-progress.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-progress.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-progress.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-spinners.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-spinners.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-spinners.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-tabs-pills.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-tabs-pills.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-tabs-pills.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-toasts.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-toasts.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-toasts.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-toasts.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/ui-toasts.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-tooltips-popovers.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-tooltips-popovers.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-tooltips-popovers.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-tooltips-popovers.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/ui-popover.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-typography.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/css/demo.css"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-typography.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/html/ui-typography.html",
+      "target": "sneat-bootstrap-html-admin-template-free-main/assets/js/main.js"
+    },
+    {
+      "source": "app/Http/Controllers/AuthController.php",
+      "target": "resources/views/auth/login.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/AuthController.php",
+      "target": "resources/views/admin/dashboard/analytics.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/AuthController.php",
+      "target": "resources/views/admin/dashboard/ecommerce.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/MidtransNotificationController.php",
+      "target": "app/Services/MidtransService.php"
+    },
+    {
+      "source": "app/Http/Middleware/ApplyDatabaseFailover.php",
+      "target": "app/Services/Security/FailoverStateService.php"
+    },
+    {
+      "source": "resources/views/admin/dashboard.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/auth/login.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/layouts/customer.blade.php",
+      "target": "resources/views/customer/partials/chat-widget.blade.php"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/fonts/iconify/iconify.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/build-config.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/libs/apex-charts/apexcharts.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/libs/apex-charts/apexcharts.js"
+    },
+    {
+      "source": "sneat-bootstrap-html-admin-template-free-main/libs/highlight/highlight.js",
+      "target": "sneat-bootstrap-html-admin-template-free-main/libs/highlight/highlight.js"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/AccountSettingController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/AccountSettingController.php",
+      "target": "resources/views/admin/account/edit.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ChatController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ChatController.php",
+      "target": "app/Models/ChatMessage.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ChatController.php",
+      "target": "app/Models/ChatThread.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ChatController.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ChatController.php",
+      "target": "app/Models/User.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ChatController.php",
+      "target": "app/Services/ChatContextService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ChatController.php",
+      "target": "resources/views/admin/chats/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ChatController.php",
+      "target": "resources/views/admin/chats/show.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/CiaController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/CiaController.php",
+      "target": "app/Services/Security/DatabaseBackupService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/CiaController.php",
+      "target": "app/Services/Security/DatabaseHealthService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/CiaController.php",
+      "target": "app/Services/Security/DatabaseReplicationService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/CiaController.php",
+      "target": "app/Services/Security/FailoverStateService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/CiaController.php",
+      "target": "app/Services/Security/ReplicationStateService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/CiaController.php",
+      "target": "resources/views/admin/cia/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/KategoriProdukController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/KategoriProdukController.php",
+      "target": "app/Models/KategoriProduk.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/KategoriProdukController.php",
+      "target": "resources/views/admin/kategori-produk/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/KategoriProdukController.php",
+      "target": "resources/views/admin/kategori-produk/create.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/KategoriProdukController.php",
+      "target": "resources/views/admin/kategori-produk/edit.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/LaporanController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/LaporanController.php",
+      "target": "app/Services/LaporanPenjualanService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/LaporanController.php",
+      "target": "resources/views/admin/laporan/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/LayananController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/LayananController.php",
+      "target": "app/Models/Layanan.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/LayananController.php",
+      "target": "resources/views/admin/layanan/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/LayananController.php",
+      "target": "resources/views/admin/layanan/create.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/LayananController.php",
+      "target": "resources/views/admin/layanan/edit.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PaymentTransactionController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PaymentTransactionController.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PaymentTransactionController.php",
+      "target": "app/Services/MidtransService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PaymentTransactionController.php",
+      "target": "resources/views/admin/payments/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PegawaiController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PegawaiController.php",
+      "target": "app/Models/Pegawai.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PegawaiController.php",
+      "target": "resources/views/admin/pegawai/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProductOrderController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProductOrderController.php",
+      "target": "app/Models/Pembayaran.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProductOrderController.php",
+      "target": "app/Models/Pesanan.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProductOrderController.php",
+      "target": "app/Services/MidtransService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProductOrderController.php",
+      "target": "resources/views/admin/product-orders/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProdukController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProdukController.php",
+      "target": "app/Models/KategoriProduk.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProdukController.php",
+      "target": "app/Models/Produk.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProdukController.php",
+      "target": "app/Services/SupabaseStorageService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProdukController.php",
+      "target": "resources/views/admin/produk/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProdukController.php",
+      "target": "resources/views/admin/produk/create.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ProdukController.php",
+      "target": "resources/views/admin/produk/edit.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PromoController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PromoController.php",
+      "target": "app/Models/Layanan.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PromoController.php",
+      "target": "app/Models/Produk.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PromoController.php",
+      "target": "app/Models/Promo.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PromoController.php",
+      "target": "resources/views/admin/promo/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PromoController.php",
+      "target": "resources/views/admin/promo/create.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/PromoController.php",
+      "target": "resources/views/admin/promo/edit.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ServiceBookingController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ServiceBookingController.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ServiceBookingController.php",
+      "target": "app/Models/ServiceBookingOption.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ServiceBookingController.php",
+      "target": "app/Models/ServiceScheduleSlot.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ServiceBookingController.php",
+      "target": "app/Services/LayananMetricSyncService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/ServiceBookingController.php",
+      "target": "resources/views/admin/booking-layanan/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/SpkLayananController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/SpkLayananController.php",
+      "target": "app/Services/SpkLayananService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/SpkLayananController.php",
+      "target": "resources/views/admin/spk-layanan/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/StokController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/StokController.php",
+      "target": "app/Models/KategoriProduk.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/StokController.php",
+      "target": "app/Models/Produk.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/StokController.php",
+      "target": "app/Models/Stok.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/StokController.php",
+      "target": "resources/views/admin/stok/index.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/StokController.php",
+      "target": "resources/views/admin/stok/create.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Admin/StokController.php",
+      "target": "resources/views/admin/stok/edit.blade.php"
+    },
+    {
+      "source": "resources/views/admin/account/edit.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "app/Models/Layanan.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "app/Models/Produk.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "app/Models/Promo.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "app/Models/User.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "app/Services/Security/FailoverStateService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "resources/views/customer/auth/login.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "resources/views/customer/auth/register.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "resources/views/customer/dashboard.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "resources/views/customer/products.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "resources/views/customer/product-detail.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "resources/views/customer/services.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/AuthController.php",
+      "target": "resources/views/customer/promos.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ChatController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ChatController.php",
+      "target": "app/Models/ChatMessage.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ChatController.php",
+      "target": "app/Models/ChatThread.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/PaymentController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/PaymentController.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/PaymentController.php",
+      "target": "app/Services/MidtransService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/PaymentController.php",
+      "target": "resources/views/customer/payment.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProductCheckoutController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProductCheckoutController.php",
+      "target": "app/Models/DetailPesanan.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProductCheckoutController.php",
+      "target": "app/Models/Pembayaran.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProductCheckoutController.php",
+      "target": "app/Models/Pesanan.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProductCheckoutController.php",
+      "target": "app/Models/Produk.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProductCheckoutController.php",
+      "target": "app/Services/MidtransService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProductCheckoutController.php",
+      "target": "app/Services/PelangganIdentityService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProductCheckoutController.php",
+      "target": "resources/views/customer/product-checkout.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProductCheckoutController.php",
+      "target": "resources/views/customer/product-payment.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "app/Models/CustomerAddress.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "app/Models/CustomerPet.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "app/Models/Pesanan.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "app/Models/User.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "app/Services/PelangganIdentityService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "app/Services/SupabaseStorageService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "resources/views/customer/profile.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "resources/views/customer/profile-pets.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ProfileController.php",
+      "target": "resources/views/customer/profile-addresses.blade.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ReviewController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ReviewController.php",
+      "target": "app/Models/DetailPesanan.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ReviewController.php",
+      "target": "app/Models/ProductReview.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ReviewController.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ReviewController.php",
+      "target": "app/Models/ServiceReview.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ReviewController.php",
+      "target": "app/Services/PelangganIdentityService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ReviewController.php",
+      "target": "app/Services/RatingAggregateService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ReviewController.php",
+      "target": "app/Services/SupabaseStorageService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ServiceBookingController.php",
+      "target": "app/Http/Controllers/Controller.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ServiceBookingController.php",
+      "target": "app/Models/Layanan.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ServiceBookingController.php",
+      "target": "app/Models/ServiceBooking.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ServiceBookingController.php",
+      "target": "app/Models/ServiceBookingOption.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ServiceBookingController.php",
+      "target": "app/Models/ServiceScheduleSlot.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ServiceBookingController.php",
+      "target": "app/Services/LayananMetricSyncService.php"
+    },
+    {
+      "source": "app/Http/Controllers/Customer/ServiceBookingController.php",
+      "target": "resources/views/customer/service-booking.blade.php"
+    },
+    {
+      "source": "resources/views/admin/cia/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/laporan/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/dashboard/analytics.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/dashboard/ecommerce.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/layanan/create.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/layanan/create.blade.php",
+      "target": "resources/views/admin/layanan/_form.blade.php"
+    },
+    {
+      "source": "resources/views/admin/layanan/edit.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/layanan/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/kategori-produk/create.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/kategori-produk/create.blade.php",
+      "target": "resources/views/admin/kategori-produk/_form.blade.php"
+    },
+    {
+      "source": "resources/views/admin/kategori-produk/edit.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/kategori-produk/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/pegawai/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/produk/create.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/produk/create.blade.php",
+      "target": "resources/views/admin/produk/_form.blade.php"
+    },
+    {
+      "source": "resources/views/admin/produk/edit.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/produk/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/spk-layanan/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/promo/create.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/promo/create.blade.php",
+      "target": "resources/views/admin/promo/_form.blade.php"
+    },
+    {
+      "source": "resources/views/admin/promo/edit.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/promo/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/stok/create.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/stok/create.blade.php",
+      "target": "resources/views/admin/stok/_form.blade.php"
+    },
+    {
+      "source": "resources/views/admin/stok/edit.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    },
+    {
+      "source": "resources/views/admin/stok/index.blade.php",
+      "target": "resources/views/layouts/app.blade.php"
+    }
+  ],
+  "timestamp": 1786089989068
+}

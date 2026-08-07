@@ -1,0 +1,31 @@
+{
+  "name": "spider-map-3d",
+  "version": "1.0.0",
+  "description": "3D Glowing Spider Map Tool - Codebase Indexer, Impact Analyzer, and 3D WebGL Neon Graph Visualizer",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "mcp": "tsx src/mcp/server.ts",
+    "crawl": "tsx src/index.ts crawl",
+    "setup": "node scripts/setup.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "3d-force-graph": "^1.73.3",
+    "fast-glob": "^3.3.2",
+    "force-graph": "^1.51.4",
+    "fs-extra": "^11.2.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.0",
+    "@types/three": "^0.160.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
+  }
+}
